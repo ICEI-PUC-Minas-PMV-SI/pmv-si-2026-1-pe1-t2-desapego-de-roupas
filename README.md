@@ -6,7 +6,7 @@
 
 `SEMESTRE: 1º`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+O objetivo geral desse projeto é a criação de uma aplicação web que permita aos usuários a venda, compra e troca de peças de roupa ainda em bom estado, evitando o descarte precoce.
 
 ## Integrantes
 
