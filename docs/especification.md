@@ -2,7 +2,6 @@
 ## Perfeis de Usuários
 |Perfil Anunciante 
 |-------------------------------
-|
 
 ## Histórias de Usuários
 
