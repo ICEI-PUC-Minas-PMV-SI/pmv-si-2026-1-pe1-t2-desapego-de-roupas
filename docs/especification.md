@@ -22,8 +22,37 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Anunciante/Interessado   | criar uma conta na plataforma   | acessar as funcionalidades do sistema.|
-|Anunciante/Interessado | fazer login na plataforma | visualizar e gerenciar minhas atividades. |
+|Anunciante/Interessado   | criar uma conta na plataforma   | acessar as funcionalidades do sistema|
+|Anunciante/Interessado | fazer login na plataforma | visualizar e gerenciar minhas atividades |
+|Anunciante/Interessado | realizar doações | incentivar a reutilização de roupas |
+|Anunciante | publicar uma roupa para desapego | vender peças que não utilizo |
+|Anunciante | adicionar informações como tamanho, cor e descrição | facilitar o entendimento dos interessados |
+|Anunciante | editar ou excluir minhas publicações | manter meus anúncios atualizados |
+|Interessado | pesquisar roupas na plataforma |encontrar peças do meu interesse |
+|Interessado | filtrar roupas por categoria, tamanho ou preço | encontrar peças de acordo com minha necessidade |
+|Interessado | entrar em contato com o anunciante | tirar dúvidas ou negociar a peça |
+|Interessado | favoritar peças | adquirir peças por um valor acessível |
+|Administrador do Sistema | remover anúncios inadequados | manter a plataforma organizada |
+|Administrador do Sistema | gerenciar usuários | garantir o bom funcionamento do sistema |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
