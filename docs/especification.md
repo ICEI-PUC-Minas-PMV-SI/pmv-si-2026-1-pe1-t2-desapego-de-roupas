@@ -1,9 +1,9 @@
 # Especificações do Projeto
 ## Perfeis de Usuários
 
-|                             Perfil Anunciante                                 |
-|-------------------------------------------------------------------------------|
-|Descrição         | Usuário que deseja anunciar roupas que não utiliza mais para vendê-las.
+|                  |          Perfil Anunciante                        |         
+|------------------|---------------------------------------------------|
+|Descrição         | Usuário que deseja anunciar roupas que não uti    |
 |Necessidades      |
 
 ## Histórias de Usuários
