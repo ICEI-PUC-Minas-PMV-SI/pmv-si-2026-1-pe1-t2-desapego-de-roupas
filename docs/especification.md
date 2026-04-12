@@ -68,5 +68,5 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 |RNF-08| O código deve ser organizado e documentado. | MÉDIA |
 |RNF-09| O sistema deve suportar pelo menos 50 usuários simultâneos. | MÉDIA |
 |RNF- 10| O sistema deve funcionar nos principais sistemas operacionais. | MÉDIA |
-|RNF- 12| O sistema deve manter padrão visual em todas as páginas. | MÉDIA |
+|RNF- 11| O sistema deve manter padrão visual em todas as páginas. | MÉDIA |
 
