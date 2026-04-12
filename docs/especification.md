@@ -54,14 +54,26 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 |RF- 11| O sistema deve permitir ao usuário favoritar peças. | MÉDIA |
 |RF- 12| O sistema deve permitir ao administrador gerenciar usuários. | MÉDIA |
 
-**Prioridade: Alta / Média / Baixa
-
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve permitir que o usuário faça o cadastro. | ALTA | 
-|RNF-002| O sistema deve permitir ao usuário conseguir fazer login o logout. |  BAIXA | 
+|RNF-01| A interface deve ser simples e intuitiva. | ALTA | 
+|RNF-02| O sistema deve ser responsivo (funcionar em celular, tablet e computador). | ALTA |
+|RNF-03| As páginas devem carregar em média 3 segundos. | MÉDIA |
+|RNF-04| O sistema deve funcionar nos navegadores padrão. |ALTA |
+|RNF-05| O sistema deve apresentar mensagens claras em caso de erro. | ALTA |
+|RNF-06| O sistema deve permitir upload de imagens de até 5 MB. | ALTA | 
+
+
+
+
+
+
+
+
+
+
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
