@@ -2,7 +2,7 @@
 ## Perfeis de Usuários
 
 |                             Perfil Anunciante 
-|------------------|----------------------------------------------------------------------
+|----------------------------------------------------------------------------------------
 |Descrição         | Usuário que deseja anunciar roupas que não utiliza mais para vendê-las.
 |Necessidades      |
 
