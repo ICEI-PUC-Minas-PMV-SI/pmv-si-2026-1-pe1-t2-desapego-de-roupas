@@ -6,7 +6,7 @@
 |Descrição         | Usuário que deseja anunciar roupas que não utiliza mais para vendê-las
 |Necessidades      | 1. Cadastro simples e rápido de anúncios; 2. Possibilidade de adicionar fotos, descrição, tamanho e estado da peça; 3. Gerenciamento dos próprios anúncios publicados; 4. Canal de comunicação com                          | interessados; 5. Segurança nas interações e negociações.
 
-| **Perfil Anunciante**|   |
+| <div align="center">**Perfil Anunciante**</div> | |
 |----------------------|--|
 | **Descrição** | Usuário que deseja anunciar roupas que não utiliza mais para vendê-las. |
 | **Necessidades** | 1. Cadastro simples e rápido de anúncios; 2. Possibilidade de adicionar fotos, descrição, tamanho e estado da peça; 3. Gerenciamento dos próprios anúncios publicados; 4. Canal de comunicação com interessados; 5. Segurança nas interações e negociações |
