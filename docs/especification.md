@@ -64,6 +64,17 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 |RNF-04| O sistema deve funcionar nos navegadores padrão. |ALTA |
 |RNF-05| O sistema deve apresentar mensagens claras em caso de erro. | ALTA |
 |RNF-06| O sistema deve permitir upload de imagens de até 5 MB. | ALTA | 
+|RNF-07| O sistema deve estar disponível 24/7. | ALTA |
+|RNF-08| O código deve ser organizado e documentado. | MÉDIA |
+|RNF-09| O sistema deve suportar pelo menos 50 usuários simultâneos. | MÉDIA |
+
+ 
+
+
+
+
+
+
 
 
 
