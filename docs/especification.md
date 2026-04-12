@@ -53,6 +53,7 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 |RF- 10| O sistema deve permitir filtragem das peças. | MÉDIA |
 |RF- 11| O sistema deve permitir ao usuário favoritar peças. | MÉDIA |
 |RF- 12| O sistema deve permitir ao administrador gerenciar usuários. | MÉDIA |
+
 **Prioridade: Alta / Média / Baixa
 
 ### Requisitos não Funcionais
