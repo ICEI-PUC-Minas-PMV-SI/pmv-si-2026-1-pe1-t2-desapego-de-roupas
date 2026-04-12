@@ -4,12 +4,12 @@
 |                  |         Perfil Anunciante                                                      
 |------------------|------------------------------------------------------------------------|
 | **Descrição** | Usuário que deseja anunciar roupas que não utiliza mais para vendê-las. |
-| **Necessidades** | 1. Cadastro simples e rápido de anúncios; 2. Possibilidade de adicionar fotos, descrição, tamanho e estado da peça; 3. Gerenciamento dos próprios anúncios publicados; 4. Canal de comunicação com interessados; 5. Segurança nas interações e negociações |
+| **Necessidades** | 1. Cadastro simples e rápido de anúncios; 2. Possibilidade de adicionar fotos, descrição, tamanho e estado da peça; 3. Gerenciamento dos próprios anúncios publicados; 4. Canal de comunicação com interessados; 5. Segurança nas interações e negociações. |
 
-| **Perfil Anunciante**                                            | |
-|----------------------|--|
-| **Descrição** | Usuário que deseja anunciar roupas que não utiliza mais para vendê-las. |
-| **Necessidades** | 1. Cadastro simples e rápido de anúncios; 2. Possibilidade de adicionar fotos, descrição, tamanho e estado da peça; 3. Gerenciamento dos próprios anúncios publicados; 4. Canal de comunicação com interessados; 5. Segurança nas interações e negociações |
+|                  |         Perfil Interessado                                                     
+|------------------|------------------------------------------------------------------------|
+| **Descrição** | Usuário que acessa a plataforma com o objetivo de encontrar roupas para a compra. |
+| **Necessidades** | 1. Sistema de busca eficiente; 2. Filtros por categoria, tamanho, preço e tipo de negociação; 3. Visualização clara das informações dos produtos; 4. Facilidade para entrar em contato com anunciantes; 5. Interface simples e intuitiva. |
 
 ## Histórias de Usuários
 
