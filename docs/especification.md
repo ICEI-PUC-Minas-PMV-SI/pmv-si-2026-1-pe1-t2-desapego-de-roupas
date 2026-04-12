@@ -41,8 +41,8 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 
 |ID    | Descrição do Requisito  | Prioridade | 
 |------|-----------------------------------------|----| 
-|RF- 01| A aplicação deve permitir que o usuário gerencie suas tarefas. | ALTA |  
-|RF- 02| A aplicação deve permitir a emissão de um relatório de tarefas realizadas no mês. | MÉDIA | 
+|RF- 01| O sistema deve permitir que o usuário faça o cadastro. | ALTA |  
+|RF- 02| O sistema deve permitir ao usuário conseguir fazer login o logout. | ALTA | 
 |RF- 03| O sistema deve permitir ao usuário publicar uma roupa para desapego. | ALTA | 
 |RF- 04| O sistema deve permitir ao usuário comprar uma peça. | ALTA |
 |RF- 05| O sistema deve permitir ao usuário poder inserir informações adicionais (tamanho, cor, descrição). | ALTA |
