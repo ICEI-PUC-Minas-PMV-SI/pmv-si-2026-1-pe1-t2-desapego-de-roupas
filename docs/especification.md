@@ -61,7 +61,7 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 |RNF-01| A interface deve ser simples e intuitiva. | ALTA | 
 |RNF-02| O sistema deve ser responsivo (funcionar em celular, tablet e computador). | ALTA |
 |RNF-03| As páginas devem carregar em média 3 segundos. | MÉDIA |
-|RNF-04| O sistema deve funcionar nos navegadores padrão. |ALTA |
+|RNF-04| O sistema deve funcionar nos navegadores padrões. |ALTA |
 |RNF-05| O sistema deve apresentar mensagens claras em caso de erro. | ALTA |
 |RNF-06| O sistema deve permitir upload de imagens de até 5 MB. | ALTA | 
 |RNF-07| O sistema deve estar disponível 24/7. | ALTA |
