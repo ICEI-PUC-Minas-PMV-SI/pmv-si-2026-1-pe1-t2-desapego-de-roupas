@@ -11,6 +11,11 @@
 | **Descrição** | Usuário que acessa a plataforma com o objetivo de encontrar roupas para a compra. |
 | **Necessidades** | 1. Sistema de busca eficiente; 2. Filtros por categoria, tamanho, preço e tipo de negociação; 3. Visualização clara das informações dos produtos; 4. Facilidade para entrar em contato com anunciantes; 5. Interface simples e intuitiva. |
 
+|                  |         Perfil Administrador do Sistema                                                    
+|------------------|------------------------------------------------------------------------|
+| **Descrição** | Responsável pela gestão da plataforma, monitorando usuários e anúncios para garantir o bom funcionamento do sistema. |
+| **Necessidades** | 1. Painel administrativo para gestão do sistema; 2. Ferramentas de moderação de anúncios; 3. Gestão de usuários cadastrados; 4. Sistema de denúncias; 5. Relatórios de atividade da plataforma. |
+
 ## Histórias de Usuários
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
