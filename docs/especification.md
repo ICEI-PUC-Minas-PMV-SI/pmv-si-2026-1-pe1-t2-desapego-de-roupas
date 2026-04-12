@@ -23,6 +23,9 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
 |Anunciante/Interessado   | criar uma conta na plataforma   | acessar as funcionalidades do sistema.|
+|Anunciante/Interessado | fazer login na plataforma | visualizar e gerenciar minhas atividades. |
+
+
 
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
