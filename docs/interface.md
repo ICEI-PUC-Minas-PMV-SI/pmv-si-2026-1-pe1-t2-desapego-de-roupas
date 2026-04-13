@@ -19,7 +19,15 @@ A tela inicial apresenta um menu lateral com as principais seções do portal, e
 
 ![Exemplo de Wireframe](img/wireframe-example.png)
 
+
+## Tela de Perfil do Usuário
+
+Essa tela permite ao usuário visualizar e editar suas informações pessoais. Geralmente contém campos como nome, e-mail, telefone e senha. É importante para manter os dados do usuário sempre atualizados.
+<img width="1122" height="796" alt="image" src="https://github.com/user-attachments/assets/e09001e6-52ce-463e-a58c-cc95f6df9b03" />
+
+
  
+
 > **Links Úteis**:
 > - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
 > - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
