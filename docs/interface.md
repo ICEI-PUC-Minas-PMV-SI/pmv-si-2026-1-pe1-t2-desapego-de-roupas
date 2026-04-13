@@ -24,30 +24,35 @@ A tela inicial apresenta um menu lateral com as principais seções do portal, e
 ## Tela de Perfil do Usuário
 
 Essa tela permite ao usuário visualizar e editar suas informações pessoais. Geralmente contém campos como nome, e-mail, telefone e senha. É importante para manter os dados do usuário sempre atualizados.
+
 <img width="1122" height="796" alt="image" src="https://github.com/user-attachments/assets/e09001e6-52ce-463e-a58c-cc95f6df9b03" />
 
 
 ## Tela de Login
 
 Responsável pela autenticação do usuário no sistema. O usuário insere e-mail e senha para acessar sua conta.
+
 <img width="1123" height="796" alt="image" src="https://github.com/user-attachments/assets/f7b8b96e-c3ee-4a4f-abc1-e568a988a6a3" />
 
 
 ## Tela de Cadastro
 
 Permite que novos usuários criem uma conta no sistema, normalmente solicita informações básicas como nome, e-mail e senha. Após o cadastro, o usuário pode acessar o sistema através do login.
+
 <img width="1122" height="797" alt="image" src="https://github.com/user-attachments/assets/1f6166b9-67dd-41f3-bad9-2ed2c7b6df2f" />
 
 
 ## Tela de Cadastro de Roupas
 
 Utilizada para adicionar novas peças de roupa ao sistema, inclui campos como nome da peça, descrição, tamanho, preço e categoria. É essencial para alimentar o catálogo de produtos disponíveis.
+
 <img width="1123" height="797" alt="image" src="https://github.com/user-attachments/assets/515cf149-b637-4408-be19-5459f2438291" />
 
 
 ## Tela de Cadastro de Vendedores
 
 Permite registrar os vendedores que estão associados às roupas, pode conter informações como nome, contato e identificação do vendedor. Ajuda no controle e organização de quem fornece os produtos.
+
 <img width="1123" height="797" alt="image" src="https://github.com/user-attachments/assets/f30a7226-e471-40e4-ad30-1ca3ffc48830" />
 
 
