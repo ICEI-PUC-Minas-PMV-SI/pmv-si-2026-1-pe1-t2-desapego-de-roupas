@@ -3,15 +3,11 @@
 
 ## User Flow
 
+O fluxograma exibido na Figura 1 representa o percurso de interação do usuário pelas telas do sistema. Cada etapa desse percurso é detalhada no Protótipo de Baixa Fidelidade a seguir. Para acessar a versão interativa do protótipo, utilize o [ambiente do MarvelApp referente ao projeto](https://marvelapp.com/prototype/aigi2eg).
+
 ![UserFlow](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2026-1-pe1-t2-desapego-de-roupas/blob/main/docs/img/userflow.png?raw=true)
 
-Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de telas do site ou app. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe.
-
-> **Links Úteis**:
-> - [User Flow: O Quê É e Como Fazer?](https://medium.com/7bits/fluxo-de-usu%C3%A1rio-user-flow-o-que-%C3%A9-como-fazer-79d965872534)
-> - [User Flow vs Site Maps](http://designr.com.br/sitemap-e-user-flow-quais-as-diferencas-e-quando-usar-cada-um/)
-> - [Top 25 User Flow Tools & Templates for Smooth](https://www.mockplus.com/blog/post/user-flow-tools)
-
+Figura 1 - Fluxo de telas do usuário
 
 ## Wireframes
 
