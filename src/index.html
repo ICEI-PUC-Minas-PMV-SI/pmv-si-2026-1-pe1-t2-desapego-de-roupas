@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Desapego de Roupas — plataforma para vender, trocar ou doar peças de roupa em bom estado." />
+  <title>Desapego de Roupas — Início</title>
+
+  <!-- Ícone da aba do navegador -->
+  <link rel="icon" type="image/png" href="./assets/icons/logo.png" />
+
+  <!-- Fontes (Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Ícones -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+
+  <!-- CSS do site -->
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+<body>
+  <div class="page">
+    <!-- Header -->
+    <header class="header" role="banner">
+      <div class="header__inner">
+        <div class="header__search">
+          <label for="site-search" class="u-sr-only">Pesquisar</label>
+          <div class="search-field">
+            <i class="fa-solid fa-magnifying-glass search-field__icon" aria-hidden="true"></i>
+            <input
+              id="site-search"
+              type="search"
+              class="search-field__input"
+              placeholder="Pesquisar"
+            />
+          </div>
+        </div>
+
+        <a href="./index.html" class="header__brand" aria-label="Desapego de Roupas - Início">
+          <img
+            src="./assets/icons/logo.png"
+            alt=""
+            class="header__brand-icon"
+            aria-hidden="true"
+          />
+        </a>
+
+        <nav class="header__nav" aria-label="Navegação principal">
+          <a href="./index.html" class="header__nav-link header__nav-link--active">Início</a>
+          <a href="./pages/cadastro.html" class="header__nav-link">Cadastrar</a>
+          <a href="./pages/login.html" class="header__nav-link">Entrar</a>
+          <a href="./pages/perfil.html" class="header__avatar" aria-label="Meu perfil">
+            <i class="fa-solid fa-user" aria-hidden="true"></i>
+          </a>
+        </nav>
+      </div>
+    </header>
+    <div class="header-stripe" aria-hidden="true"></div>
+
+    <!-- Conteúdo -->
+    <main class="page__main" role="main">
+      <section class="section">
+        <div class="container">
+          <h1>Desapego de Roupas</h1>
+          <p>
+            Plataforma para vender, trocar ou doar peças de roupa em bom estado.
+          </p>
+          <p class="u-text-muted">
+            Esta é a página de referência do template. O conteúdo específico
+            de cada tela será implementado na Etapa 3.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+      Copyright @ 2026 | Todos os direitos reservados
+    </footer>
+  </div>
+</body>
+</html>

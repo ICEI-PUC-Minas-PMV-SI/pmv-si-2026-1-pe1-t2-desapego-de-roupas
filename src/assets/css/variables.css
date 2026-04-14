@@ -1,0 +1,100 @@
+
+:root {
+  /* Cores principais */
+  --color-primary: #7C6A95;
+  --color-primary-dark: #5E4E78;
+  --color-primary-light: #B8A9C9;
+  --color-primary-bg: #E8E3EC;
+  --color-primary-bg-alt: #D6CFDD;
+
+  /* Fundos e textos */
+  --color-surface: #FFFFFF;
+  --color-background: #FFFFFF;
+  --color-background-soft: #F7F4FA;
+  --color-text: #4A3D5C;
+  --color-text-muted: #8A7BA8;
+  --color-text-subtle: #A89BBC;
+  --color-text-on-primary: #FFFFFF;
+  --color-border: #C9BDD6;
+  --color-border-soft: #E3DAED;
+
+  /* Cores de alerta */
+  --color-success: #6B9E7A;
+  --color-warning: #D4A95A;
+  --color-error: #C75A5A;
+  --color-info: #6A8BB5;
+
+  /* Fontes */
+  --font-family-base:
+    'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  --font-family-mono:
+    'Roboto Mono', 'Courier New', Consolas, monospace;
+
+  /* Tamanhos de fonte */
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 2rem;
+  --font-size-4xl: 2.5rem;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --line-height-tight: 1.2;
+  --line-height-base: 1.5;
+  --line-height-loose: 1.75;
+
+  /* Espaçamentos */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 2.5rem;
+  --space-8: 3rem;
+  --space-10: 4rem;
+  --space-12: 6rem;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+
+  --border-width: 1px;
+  --border-width-thick: 2px;
+
+  /* Sombras */
+  --shadow-sm: 0 1px 2px rgba(74, 61, 92, 0.08);
+  --shadow-md: 0 4px 12px rgba(74, 61, 92, 0.10);
+  --shadow-lg: 0 8px 24px rgba(74, 61, 92, 0.15);
+  --shadow-focus: 0 0 0 3px rgba(124, 106, 149, 0.25);
+
+  /* Tamanhos do layout */
+  --header-height: 72px;
+  --footer-height: 56px;
+  --sidebar-width: 240px;
+  --container-max-width: 1200px;
+  --form-card-max-width: 440px;
+
+  /* Animações */
+  --transition-fast: 150ms ease-in-out;
+  --transition-base: 250ms ease-in-out;
+  --transition-slow: 400ms ease-in-out;
+
+  /* Camadas */
+  --z-base: 1;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-header: 300;
+  --z-overlay: 400;
+  --z-modal: 500;
+  --z-toast: 600;
+}
