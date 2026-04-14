@@ -89,13 +89,7 @@ src/
 Como é um site estático, qualquer servidor HTTP local funciona. Opções:
 
 ```bash
-# Python 3 (já vem instalado em boa parte dos ambientes)
-python -m http.server 8080 --directory src
-
-# Node.js (npx, sem instalar nada permanente)
-npx serve src
-
-# VS Code: extensão "Live Server" — clique direito em index.html → "Open with Live Server"
+# VS Code: extensão "Live Server" — clique botão direito em index.html → "Open with Live Server"
 ```
 
 Acesse `http://localhost:8080`.
