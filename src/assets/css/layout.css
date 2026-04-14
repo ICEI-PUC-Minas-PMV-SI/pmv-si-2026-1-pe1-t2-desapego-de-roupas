@@ -65,7 +65,6 @@
   width: 32px;
   height: 32px;
   object-fit: contain;
-  /* logo preta vira branca pra contrastar com o header roxo */
   filter: brightness(0) invert(1);
 }
 
@@ -117,7 +116,7 @@
   transform: scale(1.05);
 }
 
-/* Faixa decorativa abaixo do header */
+/* Faixa abaixo do header */
 .header-stripe {
   height: 12px;
   background-color: var(--color-primary-light);
