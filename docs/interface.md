@@ -9,16 +9,13 @@ O fluxograma exibido na Figura 1 representa o percurso de interação do usuári
 
 Figura 1 - Fluxo de telas do usuário
 
-## Wireframes
+## Tela Home Page
 
-São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface e é fundamental sempre relacionar cada wireframe com o(s) requisito(s) que ele atende.
+Tela principal do sistema após o login, apresenta as categorias de produtos (como superior, inferior, calçados e acessórios). Serve como ponto de navegação para acessar as demais funcionalidades.
 
-### Exemplo
+<img width="1123" height="795" alt="image" src="https://github.com/user-attachments/assets/960dfb49-8252-4dea-a44c-50fa98124883" />
 
-A tela inicial apresenta um menu lateral com as principais seções do portal, enquanto a navigation bar, ao topo, apresenta informações de envio de imagens ou navegação pela galeria de fotos. A área central apresenta a galeria de fotos na forma de uma grade. Nesta tela, são apresentados os seguintes requisitos
-
-![Exemplo de Wireframe](img/wireframe-example.png)
-
+Figura 2 - Tela home page
 
 
 ## Tela de Perfil do Usuário
@@ -27,6 +24,7 @@ Essa tela permite ao usuário visualizar e editar suas informações pessoais. G
 
 <img width="1122" height="796" alt="image" src="https://github.com/user-attachments/assets/e09001e6-52ce-463e-a58c-cc95f6df9b03" />
 
+Figura 3 - Tela de Perfil do Usuário
 
 
 ## Tela de Login
@@ -35,6 +33,7 @@ Responsável pela autenticação do usuário no sistema. O usuário insere e-mai
 
 <img width="1123" height="796" alt="image" src="https://github.com/user-attachments/assets/f7b8b96e-c3ee-4a4f-abc1-e568a988a6a3" />
 
+Figura 4 - Tela de Login
 
 
 ## Tela de Cadastro
@@ -43,6 +42,7 @@ Permite que novos usuários criem uma conta no sistema, normalmente solicita inf
 
 <img width="1122" height="797" alt="image" src="https://github.com/user-attachments/assets/1f6166b9-67dd-41f3-bad9-2ed2c7b6df2f" />
 
+Figura 5 - Tela de Cadastro
 
 
 ## Tela de Cadastro de Roupas
@@ -51,7 +51,7 @@ Utilizada para adicionar novas peças de roupa ao sistema, inclui campos como no
 
 <img width="1123" height="797" alt="image" src="https://github.com/user-attachments/assets/515cf149-b637-4408-be19-5459f2438291" />
 
-
+Figura 6 - Tela de Cadastro de Roupas
 
 
 ## Tela de Cadastro de Vendedores
@@ -60,14 +60,7 @@ Permite registrar os vendedores que estão associados às roupas, pode conter in
 
 <img width="1123" height="797" alt="image" src="https://github.com/user-attachments/assets/f30a7226-e471-40e4-ad30-1ca3ffc48830" />
 
-
-
-## Tela da Home Page
-
-É a tela principal do sistema após o login, apresenta as categorias de produtos (como superior, inferior, calçados e acessórios). Serve como ponto de navegação para acessar as demais funcionalidades.
-
-<img width="1123" height="795" alt="image" src="https://github.com/user-attachments/assets/960dfb49-8252-4dea-a44c-50fa98124883" />
-
+Figura 7 - Tela de Cadastro de Vendedores
 
 
 ## Tela de Peças Superiores
@@ -76,6 +69,7 @@ Exibe roupas da parte superior (ex: camisetas, blusas, jaquetas). Organiza os pr
 
 <img width="1122" height="797" alt="image" src="https://github.com/user-attachments/assets/6bc042d2-4f11-4cfd-93fc-87ce61b8ebe5" />
 
+Figura 8 - Tela de Peças Superiores
 
 
 ## Tela de Peças Inferiores
@@ -84,6 +78,8 @@ Mostra roupas da parte inferior do corpo (ex: calças, shorts, saias). Segue o m
 
 <img width="1122" height="796" alt="image" src="https://github.com/user-attachments/assets/8414451e-ff94-45c6-a828-9e058ca8e92e" />
 
+Figura 9 - Tela de Peças Inferiores
+
 
 ## Tela de Calçados
 
@@ -91,6 +87,7 @@ Exibe todos os produtos da categoria de calçados. Permite ao usuário visualiza
 
 <img width="1123" height="795" alt="image" src="https://github.com/user-attachments/assets/8a6584e6-9e2c-49c5-bdff-4949ff532816" />
 
+Figura 10 - Tela de Calçados
 
 
 ## Tela de Acessórios
@@ -99,16 +96,4 @@ Apresenta itens complementares como bolsas, cintos, bonés, etc. Ajuda a complet
 
 <img width="1123" height="797" alt="image" src="https://github.com/user-attachments/assets/02506247-b8a8-4895-b6e2-deaf5a68bc73" />
 
-
-
-
-
-
-> **Links Úteis**:
-> - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
-> - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
-> - [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
-> - [Figma](https://www.figma.com/)
-> - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-> - [Axure](https://www.axure.com/edu) (Licença Educacional)
-> - [InvisionApp](https://www.invisionapp.com/) (Licença Educacional)
+Figura 11 - Tela de Acessórios
