@@ -9,6 +9,8 @@ O fluxograma exibido na Figura 1 representa o percurso de interação do usuári
 
 Figura 1 - Fluxo de telas do usuário
 
+---
+
 ## Tela Home Page
 
 Tela principal do sistema após o login, apresenta as categorias de produtos (como superior, inferior, calçados e acessórios). Serve como ponto de navegação para acessar as demais funcionalidades.
@@ -17,6 +19,7 @@ Tela principal do sistema após o login, apresenta as categorias de produtos (co
 
 Figura 2 - Tela home page
 
+---
 
 ## Tela de Perfil do Usuário
 
@@ -26,6 +29,7 @@ Essa tela permite ao usuário visualizar e editar suas informações pessoais. G
 
 Figura 3 - Tela de Perfil do Usuário
 
+---
 
 ## Tela de Login
 
@@ -35,6 +39,7 @@ Responsável pela autenticação do usuário no sistema. O usuário insere e-mai
 
 Figura 4 - Tela de Login
 
+---
 
 ## Tela de Cadastro
 
@@ -44,6 +49,7 @@ Permite que novos usuários criem uma conta no sistema, normalmente solicita inf
 
 Figura 5 - Tela de Cadastro
 
+---
 
 ## Tela de Cadastro de Roupas
 
@@ -53,6 +59,7 @@ Utilizada para adicionar novas peças de roupa ao sistema, inclui campos como no
 
 Figura 6 - Tela de Cadastro de Roupas
 
+---
 
 ## Tela de Cadastro de Vendedores
 
@@ -62,6 +69,7 @@ Permite registrar os vendedores que estão associados às roupas, pode conter in
 
 Figura 7 - Tela de Cadastro de Vendedores
 
+---
 
 ## Tela de Peças Superiores
 
@@ -71,6 +79,7 @@ Exibe roupas da parte superior (ex: camisetas, blusas, jaquetas). Organiza os pr
 
 Figura 8 - Tela de Peças Superiores
 
+---
 
 ## Tela de Peças Inferiores
 
@@ -80,6 +89,7 @@ Mostra roupas da parte inferior do corpo (ex: calças, shorts, saias). Segue o m
 
 Figura 9 - Tela de Peças Inferiores
 
+---
 
 ## Tela de Calçados
 
@@ -89,6 +99,7 @@ Exibe todos os produtos da categoria de calçados. Permite ao usuário visualiza
 
 Figura 10 - Tela de Calçados
 
+---
 
 ## Tela de Acessórios
 
