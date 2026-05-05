@@ -97,6 +97,15 @@
   text-decoration: none;
 }
 
+.header__nav-link--static {
+  cursor: default;
+}
+
+.header__nav-link--static:hover,
+.header__nav-link--static:focus {
+  opacity: 1;
+}
+
 .header__nav-link--active::after {
   content: '';
   position: absolute;
