@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Entrar - Desapego de Roupas</title>
+        <link rel="icon" type="image/png" href="../assets/icons/logo.png" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        />
+        <link rel="stylesheet" href="../assets/css/styles.css" />
+    </head>
+    <body>
+        <div class="page page--auth">
+            <main class="page__main page__main--auth" role="main">
+                <section class="section">
+                    <div class="container container--form">
+                        <div class="card">
+                            <header class="card__header">
+                                <h1 class="card__title">Entrar</h1>
+                            </header>
+                            <form class="form" id="login-form" novalidate>
+                                <div class="form-group">
+                                    <label for="email" class="form-label u-sr-only">Email</label>
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        name="email"
+                                        class="form-control"
+                                        placeholder="Email"
+                                        autocomplete="email"
+                                        required
+                                    />
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class="form-label u-sr-only">Senha</label>
+                                    <input
+                                        type="password"
+                                        id="password"
+                                        name="password"
+                                        class="form-control"
+                                        placeholder="Senha"
+                                        autocomplete="current-password"
+                                        required
+                                    />
+                                </div>
+                                <p class="form-error" id="login-error" role="alert" hidden></p>
+                                <button type="submit" class="btn btn--primary btn--block">Entrar</button>
+                            </form>
+                            <div class="card__footer">
+                                <!-- criar essa pagina depois -->
+                                <a href="#">Esqueceu sua senha?</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="footer" role="contentinfo">
+                Copyright @ 2026 | Todos os direitos reservados
+            </footer>
+        </div>
+        <script type="module" src="../assets/js/controllers/login.js"></script>
+    </body>
+</html>
