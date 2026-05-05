@@ -1,7 +1,7 @@
 
 
 import { seedIfEmpty } from "../seed.js";
-import { login } from "../service/auth.js";
+import { login } from "../services/auth.js";
 
 
 seedIfEmpty();
