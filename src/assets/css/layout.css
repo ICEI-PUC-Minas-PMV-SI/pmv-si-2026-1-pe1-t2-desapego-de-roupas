@@ -11,6 +11,16 @@
   width: 100%;
 }
 
+.page--auth {
+  background-color: var(--color-primary-bg);
+}
+
+.page__main--auth {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 /* Container */
 .container {
   width: 100%;
@@ -19,12 +29,9 @@
   padding-inline: var(--space-5);
 }
 
-.container--narrow {
-  max-width: 720px;
-}
-
 .container--form {
   max-width: var(--form-card-max-width);
+  width: 100%;
 }
 
 /* Header */
@@ -65,7 +72,7 @@
   width: 32px;
   height: 32px;
   object-fit: contain;
-  /* logo preta vira branca pra contrastar com o header roxo */
+  /* Inverte a cor da logo */
   filter: brightness(0) invert(1);
 }
 

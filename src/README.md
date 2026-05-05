@@ -59,13 +59,11 @@ src/
 </head>
 <body>
   <div class="page">
-    <!-- Cole aqui o header (ver src/index.html) -->
 
     <main class="page__main">
-      <!-- Conteúdo da página -->
+      
     </main>
 
-    <!-- Cole aqui o footer (ver src/index.html) -->
   </div>
 </body>
 </html>
@@ -79,7 +77,7 @@ src/
 - **Acessibilidade**: todo ícone decorativo recebe `aria-hidden="true"`; todo input recebe `<label>` associado (use `u-sr-only` para labels visualmente ocultos).
 - **Classes CSS**: padrão **BEM leve** — `.bloco__elemento--modificador` (ex.: `.card__title`, `.btn--primary`).
 - **Idioma**: conteúdo em pt-BR; classes e nomes de arquivos em inglês/pt-BR coerente com o padrão existente.
-- **Nomes de arquivos**: minúsculos, com hífens (`cadastro-de-roupas.html`).
+- **Nomes de arquivos**: (`cadastroRoupas.html`).
 - **Nunca edite** diretamente os arquivos em `assets/css/` para resolver um caso de página específica. Se precisar de um novo componente, adicione-o em `components.css` seguindo o padrão BEM.
 
 ---
