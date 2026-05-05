@@ -1,8 +1,5 @@
 
-
-const STORAGE_KEY = "users";
-
-const CURRENT_USER = "current_user";
+export const STORAGE_KEY = "users";
 
 
 export function getAll () {
