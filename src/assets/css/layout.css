@@ -124,7 +124,7 @@
   transform: scale(1.05);
 }
 
-/* Faixa decorativa abaixo do header */
+/* Faixa abaixo do header */
 .header-stripe {
   height: 12px;
   background-color: var(--color-primary-light);

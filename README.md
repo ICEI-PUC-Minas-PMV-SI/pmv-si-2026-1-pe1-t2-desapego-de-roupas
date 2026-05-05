@@ -20,7 +20,7 @@ O objetivo geral desse projeto é a criação de uma aplicação web que permita
 
 ## Orientador
 
-* Clovis Macedo Neto 
+* Clóvis Lemos Tavares 
 
 # Planejamento
 

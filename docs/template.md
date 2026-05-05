@@ -216,8 +216,3 @@ Cópia pronta para iniciar uma nova página em `src/pages/`:
 ```
 
 ---
-
-> **Links úteis**
-> - [Font Awesome Icons](https://fontawesome.com/icons)
-> - [Google Fonts — Poppins](https://fonts.google.com/specimen/Poppins)
-> - [BEM — Block, Element, Modifier](https://getbem.com/introduction/)
