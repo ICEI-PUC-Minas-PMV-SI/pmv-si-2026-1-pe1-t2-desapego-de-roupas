@@ -55,11 +55,25 @@
 
         <nav class="header__nav" aria-label="Navegação principal">
           <a href="index.html" class="header__nav-link header__nav-link--active">Início</a>
-          <a href="signup.html" class="header__nav-link">Cadastrar</a>
-          <a href="login.html" class="header__nav-link">Entrar</a>
-          <a href="#" class="header__avatar" aria-label="Meu perfil">
-            <i class="fa-solid fa-user" aria-hidden="true"></i>
-          </a>
+          <a id="nav-cadastrar" href="signup.html" class="header__nav-link">Cadastrar</a>
+          <a id="nav-entrar" href="login.html" class="header__nav-link">Entrar</a>
+          <span id="nav-username" class="header__nav-link header__nav-link--static" hidden></span>
+          <div id="user-menu" class="user-menu" hidden>
+            <button
+              id="nav-avatar"
+              type="button"
+              class="header__avatar"
+              aria-label="Menu do usuário"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <i class="fa-solid fa-user" aria-hidden="true"></i>
+            </button>
+            <div id="user-menu-panel" class="user-menu__panel" hidden>
+              <a href="#" class="user-menu__item">Perfil</a>
+              <button id="nav-sair" type="button" class="user-menu__item">Sair</button>
+            </div>
+          </div>
         </nav>
       </div>
     </header>
@@ -74,8 +88,8 @@
             Plataforma para vender, trocar ou doar peças de roupa em bom estado.
           </p>
           <p class="u-text-muted">
-            Esta é a página de referência do template. O conteúdo específico
-            de cada tela será implementado na Etapa 3.
+            <!-- Esta é a página de referência do template. O conteúdo específico
+            de cada tela será implementado na Etapa 3. -->
           </p>
         </div>
       </section>
@@ -86,5 +100,6 @@
       Copyright @ 2026 | Todos os direitos reservados
     </footer>
   </div>
+  <script type="module" src="../assets/js/controllers/header.js"></script>
 </body>
 </html>

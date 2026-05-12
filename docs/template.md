@@ -2,7 +2,7 @@
 
 Este documento define o **layout padrão** da aplicação *Desapego de Roupas* — a identidade visual, o esqueleto comum a todas as páginas, a responsividade e a iconografia.
 
-A implementação em HTML e CSS está em [`src/assets/css/`](../src/assets/css/) e a página [`src/index.html`](../src/index.html) serve como referência de uso.
+A implementação em HTML e CSS está em [`src/assets/css/`](../src/assets/css/) e a página [`src/pages/index.html`](../src/pages/index.html) serve como referência de uso.
 
 ---
 
@@ -21,7 +21,7 @@ A implementação em HTML e CSS está em [`src/assets/css/`](../src/assets/css/)
 
 ## Design
 
-Toda página do site segue a mesma estrutura:
+A maioria das páginas segue esta estrutura padrão:
 
 ```
 ┌──────────────────────────────────────────────────────────┐
@@ -40,9 +40,13 @@ Toda página do site segue a mesma estrutura:
 
 **Logo**: o ícone de folha (representa sustentabilidade) fica centralizado no header, ao lado do campo de busca.
 
-**Menu principal**: `Início`, `Cadastrar`, `Entrar` + avatar de perfil, alinhados à direita no header.
+**Menu principal**: `Início`, `Cadastrar`, `Entrar` + avatar de perfil, alinhados à direita no header. Quando o usuário está logado, `Cadastrar` e `Entrar` somem, e o nome do usuário aparece junto com o avatar. Clicar no avatar abre o `user-menu` (dropdown) com as opções `Perfil` e `Sair`.
 
-**Botões e formulários genéricos**: definidos em `components.css` (`.btn`, `.form`, `.form-control`, `.card`) e prontos pra uso em qualquer página.
+**Botões e formulários genéricos**: definidos em `components.css` (`.btn`, `.form`, `.form-control`, `.card`, `.user-menu`) e prontos pra uso em qualquer página.
+
+### Páginas de autenticação
+
+Login e cadastro **não têm header** e usam fundo lavender em vez de branco. Aplica-se o modificador `.page--auth` no `<div class="page">` (faz o fundo) e `.page__main--auth` no `<main>` (centraliza verticalmente o card). O footer continua presente.
 
 > Componentes específicos de cada tela (tiles de categoria, cards de produto, card de autenticação etc.) serão construídos na **Etapa 3**, aproveitando as variáveis e classes base definidas aqui.
 
@@ -165,12 +169,23 @@ src/assets/css/
 ├── variables.css     Cores, fontes, espaçamentos (fonte da verdade)
 ├── base.css          Tipografia global e utilitários
 ├── layout.css        Page, container, header, footer, grid
-└── components.css    Botões, formulários, cards, busca
+└── components.css    Botões, formulários, cards, busca, user-menu
 ```
 
 Ordem do cascade em `styles.css`: reset → variables → base → layout → components.
 
 Nunca edite o visual com CSS inline ou `<style>` local. Qualquer componente novo deve ser adicionado em `components.css`.
+
+### Modificadores e componentes recentes
+
+| Classe                          | Onde mora       | O que faz                                                                |
+|---------------------------------|-----------------|--------------------------------------------------------------------------|
+| `.page--auth`                   | `layout.css`    | Fundo lavender pra telas de autenticação                                 |
+| `.page__main--auth`             | `layout.css`    | Centraliza verticalmente o card (flex column + justify-content: center)  |
+| `.header__nav-link--static`     | `layout.css`    | Cancela o hover/cursor de itens de nav não-clicáveis (ex.: nome do user) |
+| `.user-menu`                    | `components.css`| Container relativo do dropdown do usuário                                |
+| `.user-menu__panel`             | `components.css`| Painel branco flutuante com sombra, abre abaixo do avatar                |
+| `.user-menu__item`              | `components.css`| Cada opção do dropdown (Perfil, Sair)                                    |
 
 ---
 
@@ -201,7 +216,7 @@ Cópia pronta para iniciar uma nova página em `src/pages/`:
 </head>
 <body>
   <div class="page">
-    <!-- HEADER (copiar de src/index.html) -->
+    <!-- HEADER (copiar de src/pages/index.html) -->
 
     <main class="page__main">
       <div class="container">
@@ -209,7 +224,7 @@ Cópia pronta para iniciar uma nova página em `src/pages/`:
       </div>
     </main>
 
-    <!-- FOOTER (copiar de src/index.html) -->
+    <!-- FOOTER (copiar de src/pages/index.html) -->
   </div>
 </body>
 </html>

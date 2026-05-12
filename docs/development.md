@@ -25,18 +25,33 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 
 ### Requisitos Funcionais
 
-|ID    | Descrição do Requisito | Responsável | Artefato Criado |
-|------|------------------------|------------|-----------------|
-|RF-001| A aplicação deve permitir que o usuário gerencie suas tarefas | João | index.html |
-|RF-002| A aplicação deve permitir a emissão de um relatório de tarefas realizadas no mês | Ana Paula | cadastro-noticia.html |
+| ID     | Descrição do Requisito                                                                                       | Responsável | Artefato Criado                                                                                                  |
+|--------|--------------------------------------------------------------------------------------------------------------|-------------|------------------------------------------------------------------------------------------------------------------|
+| RF-001 | A aplicação deve permitir que o usuário entre com email e senha previamente cadastrados                      | Clayton     | `src/pages/login.html`, `assets/js/controllers/login.js`, `assets/js/services/auth.js`, `assets/js/repository/users.js`, `assets/js/repository/session.js` |
+| RF-002 | A aplicação deve indicar visualmente o usuário logado na header e permitir o logout via dropdown no avatar   | Clayton     | `src/pages/index.html`, `assets/js/controllers/header.js`, `assets/js/repository/session.js`                     |
 
-## Descrição das estruturas:
+## Descrição das estruturas
 
-## Notícia
-|  **Nome**      | **Tipo**          | **Descrição**                             | **Exemplo**                                    |
-|:--------------:|-------------------|-------------------------------------------|------------------------------------------------|
-| Id             | Numero (Inteiro)  | Identificador único da notícia            | 1                                              |
-| Título         | Texto             | Título da notícia                         | Sistemas de Informação PUC Minas é o melhor                                   |
-| Conteúdo       | Texto             | Conteúdo da notícia                       | Sistemas de Informação da PUC Minas é eleito o melhor curso do Brasil                            |
-| Id do usuário  | Numero (Inteiro)  | Identificador do usuário autor da notícia | 1                                              |
+A persistência é feita via `localStorage`. Cada "tabela" corresponde a uma chave.
+
+### Usuário (chave `users`)
+
+Array de objetos. Acessado por `assets/js/repository/users.js`.
+
+| **Nome** | **Tipo**            | **Descrição**                                            | **Exemplo**                              |
+|----------|---------------------|----------------------------------------------------------|------------------------------------------|
+| id       | string (UUID v4)    | Identificador único, gerado por `generateUUID()`         | `"7b9c4d06-be0d-414a-9a06-14b25a865e75"` |
+| login    | string              | Nome de usuário (username)                               | `"admin"`                                |
+| email    | string              | Email do usuário (chave usada na tela de login)          | `"admin@abc.com"`                        |
+| nome     | string              | Nome completo, exibido na header quando logado           | `"Administrador do Sistema"`             |
+| senha    | string (texto puro) | Senha do usuário. **Sem hash** — limitação do escopo.    | `"123"`                                  |
+
+### Sessão (chave `current_user`)
+
+Objeto único (não array) com o mesmo formato do usuário. Representa quem está logado no momento. É criado por `repository/session.js → save(user)` no login bem-sucedido, e removido por `clear()` no logout.
+
+| **Estado**             | **Conteúdo de `current_user`**           |
+|------------------------|------------------------------------------|
+| Usuário não logado     | `null` (chave não existe no localStorage) |
+| Usuário logado         | Objeto completo do usuário                |
 

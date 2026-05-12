@@ -29,11 +29,11 @@
                             </header>
                             <form class="form" id="signup-form" novalidate>
                                 <div class="form-group">
-                                    <label for="name" class="form-label u-sr-only">Nome</label>
+                                    <label for="nome" class="form-label u-sr-only">Nome</label>
                                     <input
-                                        type="name"
-                                        id="name"
-                                        name="name"
+                                        type="text"
+                                        id="nome"
+                                        name="nome"
                                         class="form-control"
                                         placeholder="Nome"
                                         autocomplete="name"
@@ -60,16 +60,15 @@
                                         name="password"
                                         class="form-control"
                                         placeholder="Senha"
-                                        autocomplete="current-password"
+                                        autocomplete="new-password"
                                         required
                                     />
                                 </div>
-                                <p class="form-error" id="signup-form" role="alert" hidden></p>
+                                <p class="form-error" id="signup-error" role="alert" hidden></p>
                                 <button type="submit" class="btn btn--primary btn--block">Cadastrar</button>
                             </form>
                             <div class="card__footer">
-                                <!-- criar essa pagina depois -->
-                                <a href="#">Esqueceu sua senha?</a>
+                                Já tem conta? <a href="login.html">Entrar</a>
                             </div>
                         </div>
                     </div>
@@ -80,6 +79,6 @@
                 Copyright @ 2026 | Todos os direitos reservados
             </footer>
         </div>
-        <script type="module" src="../assets/js/controllers/login.js"></script>
+        <script type="module" src="../assets/js/controllers/signup.js"></script>
     </body>
 </html>
