@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cadastrar - Desapego de Roupas</title>
+        <link rel="icon" type="image/png" href="../assets/icons/logo.png" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        />
+        <link rel="stylesheet" href="../assets/css/styles.css" />
+    </head>
+    <body>
+        <div class="page page--auth">
+            <main class="page__main page__main--auth" role="main">
+                <section class="section">
+                    <div class="container container--form">
+                        <div class="card">
+                            <header class="card__header">
+                                <h1 class="card__title">Cadastrar</h1>
+                            </header>
+                            <form class="form" id="signup-form" novalidate>
+                                <div class="form-group">
+                                    <label for="name" class="form-label u-sr-only">Nome</label>
+                                    <input
+                                        type="text"
+                                        id="name"
+                                        name="name"
+                                        class="form-control"
+                                        placeholder="Nome"
+                                        autocomplete="name"
+                                        required
+                                    />
+                                </div>
+                                <div class="form-group">
+                                    <label for="email" class="form-label u-sr-only">Email</label>
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        name="email"
+                                        class="form-control"
+                                        placeholder="Email"
+                                        autocomplete="email"
+                                        required
+                                    />
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class="form-label u-sr-only">Senha</label>
+                                    <input
+                                        type="password"
+                                        id="password"
+                                        name="password"
+                                        class="form-control"
+                                        placeholder="Senha"
+                                        autocomplete="new-password"
+                                        required
+                                    />
+                                </div>
+                                <p class="form-error" id="signup-error" role="alert" hidden></p>
+                                <button type="submit" class="btn btn--primary btn--block">Cadastrar</button>
+                            </form>
+                            <div class="card__footer">
+                                Já tem conta? <a href="login.html">Entrar</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="footer" role="contentinfo">
+                Copyright @ 2026 | Todos os direitos reservados
+            </footer>
+        </div>
+    </body>
+</html>
