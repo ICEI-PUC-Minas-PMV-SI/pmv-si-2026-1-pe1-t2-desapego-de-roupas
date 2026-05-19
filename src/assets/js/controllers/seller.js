@@ -11,6 +11,13 @@ const currentUser = session.get();
 if (currentUser) {
     form.nome.value = currentUser.nome ?? "";
     form.email.value = currentUser.email ?? "";
+    form.tel.value = currentUser.telefone ?? "";
+    form.cpf.value = currentUser.cpf ?? "";
+    form.cidade.value = currentUser.cidade ?? "";
+
+    if (currentUser.cpf) {
+        form.cpf.disabled = true;
+    }
 }
 
 
@@ -36,6 +43,12 @@ const trigger = select.querySelector(".select__trigger");
 const valueEl = select.querySelector(".select__value");
 const panel = select.querySelector(".select__panel");
 const stateInput = document.getElementById("estado");
+
+if (currentUser && currentUser.estado) {
+    valueEl.textContent = currentUser.estado;
+    valueEl.classList.remove("select__value--placeholder");
+    stateInput.value = currentUser.estado;
+}
 
 trigger.addEventListener("click", () => {
     const willOpen = panel.hidden;
