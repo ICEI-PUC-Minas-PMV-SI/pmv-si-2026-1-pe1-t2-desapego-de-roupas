@@ -19,38 +19,7 @@
       display: flex;
       flex: 1;
     }
-
-    /* ── Sidebar ── */
-    aside {
-      width: 300px;
-      min-width: 300px;
-      background: #b8aace;
-      padding: 2rem 1.5rem;
-      display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
-    }
-
-    .nav-item {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      color: #4a3f5c;
-      text-decoration: none;
-      font-size: 1rem;
-      font-family: 'Courier New', Courier, monospace;
-    }
-
-    .nav-item svg {
-      width: 22px;
-      height: 22px;
-      fill: #4a3f5c;
-      flex-shrink: 0;
-    }
-
-    .nav-item:hover { color: #2c2040; }
-    .nav-item:hover svg { fill: #2c2040; }
-
+    
     /* ── Conteúdo principal ── */
     main {
       flex: 1;
@@ -157,38 +126,9 @@
     }
   </style>
 </head>
+  
 <body>
-
   <div class="layout">
-
-    <!-- Sidebar -->
-    <aside>
-      <a href="#" class="nav-item">
-        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/>
-        </svg>
-        Perfil
-      </a>
-      <a href="#" class="nav-item">
-        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/>
-        </svg>
-        Cadastro de roupas
-      </a>
-      <a href="#" class="nav-item">
-        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/>
-        </svg>
-        Cadastro de vendedores
-      </a>
-      <a href="#" class="nav-item">
-        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path d="M10.09 15.59L11.5 17l5-5-5-5-1.41 1.41L12.67 11H3v2h9.67l-2.58 2.59zM19 3H5a2 2 0 00-2 2v4h2V5h14v14H5v-4H3v4a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2z"/>
-        </svg>
-        Sair
-      </a>
-    </aside>
-
     <!-- Conteúdo -->
     <main>
       <div class="card">
