@@ -55,8 +55,8 @@
 
         <nav class="header__nav" aria-label="Navegação principal">
           <a href="index.html" class="header__nav-link header__nav-link--active">Início</a>
-          <a id="nav-cadastrar" href="signup.html" class="header__nav-link">Cadastrar</a>
-          <a id="nav-entrar" href="login.html" class="header__nav-link">Entrar</a>
+          <a id="nav-register" href="signup.html" class="header__nav-link">Cadastrar</a>
+          <a id="nav-login" href="login.html" class="header__nav-link">Entrar</a>
           <span id="nav-username" class="header__nav-link header__nav-link--static" hidden></span>
           <div id="user-menu" class="user-menu" hidden>
             <button
@@ -68,10 +68,14 @@
               aria-expanded="false"
             >
               <i class="fa-solid fa-user" aria-hidden="true"></i>
+              <span id="nav-seller-badge" class="header__avatar-badge" aria-label="Vendedor" hidden>
+                <i class="fa-solid fa-store" aria-hidden="true"></i>
+              </span>
             </button>
             <div id="user-menu-panel" class="user-menu__panel" hidden>
               <a href="#" class="user-menu__item">Perfil</a>
-              <button id="nav-sair" type="button" class="user-menu__item">Sair</button>
+              <a id="nav-become-seller" href="seller-signup.html" class="user-menu__item" hidden>Começar a vender</a>
+              <button id="nav-logout" type="button" class="user-menu__item">Sair</button>
             </div>
           </div>
         </nav>

@@ -34,6 +34,11 @@
   width: 100%;
 }
 
+.container--form-wide {
+  max-width: 580px;
+  width: 100%;
+}
+
 /* Header */
 .header {
   background-color: var(--color-primary);
@@ -117,6 +122,7 @@
 }
 
 .header__avatar {
+  position: relative;
   width: 40px;
   height: 40px;
   border-radius: var(--radius-full);
@@ -127,6 +133,23 @@
   color: var(--color-primary-dark);
   cursor: pointer;
   transition: transform var(--transition-fast);
+}
+
+/* Selo de vendedor no canto do avatar */
+.header__avatar-badge {
+  position: absolute;
+  right: -2px;
+  bottom: -2px;
+  width: 18px;
+  height: 18px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-success);
+  color: var(--color-text-on-primary);
+  border: 2px solid var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 9px;
 }
 
 .header__avatar:hover {
