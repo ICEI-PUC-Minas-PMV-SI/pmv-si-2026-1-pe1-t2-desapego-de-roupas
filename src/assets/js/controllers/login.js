@@ -20,7 +20,7 @@ form.addEventListener("submit", (e) => {
     const result = login(email, senha);
 
     if (result.ok) {
-        window.location.href = "../pages/index.html";
+        window.location.href = "../pages/main.html";
     } else {
         errorEl.textContent = result.error;
         errorEl.hidden = false;
