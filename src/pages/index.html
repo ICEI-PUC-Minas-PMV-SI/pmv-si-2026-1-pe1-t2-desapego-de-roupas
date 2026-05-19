@@ -55,8 +55,8 @@
 
         <nav class="header__nav" aria-label="Navegação principal">
           <a href="index.html" class="header__nav-link header__nav-link--active">Início</a>
-          <a id="nav-cadastrar" href="signup.html" class="header__nav-link">Cadastrar</a>
-          <a id="nav-entrar" href="login.html" class="header__nav-link">Entrar</a>
+          <a id="nav-register" href="signup.html" class="header__nav-link">Cadastrar</a>
+          <a id="nav-login" href="login.html" class="header__nav-link">Entrar</a>
           <span id="nav-username" class="header__nav-link header__nav-link--static" hidden></span>
           <div id="user-menu" class="user-menu" hidden>
             <button
@@ -67,11 +67,15 @@
               aria-haspopup="true"
               aria-expanded="false"
             >
-              <i class="fa-solid fa-user" aria-hidden="true"></i>
+              <img id="nav-avatar-img" class="header__avatar-img" src="../assets/img/avatars/avatar-1.svg" alt="" />
+              <span id="nav-seller-badge" class="header__avatar-badge" aria-label="Vendedor" hidden>
+                <i class="fa-solid fa-store" aria-hidden="true"></i>
+              </span>
             </button>
             <div id="user-menu-panel" class="user-menu__panel" hidden>
-              <a href="#" class="user-menu__item">Perfil</a>
-              <button id="nav-sair" type="button" class="user-menu__item">Sair</button>
+              <a href="profile.html" class="user-menu__item">Perfil</a>
+              <a id="nav-become-seller" href="seller-signup.html" class="user-menu__item" hidden>Começar a vender</a>
+              <button id="nav-logout" type="button" class="user-menu__item">Sair</button>
             </div>
           </div>
         </nav>
@@ -83,14 +87,34 @@
     <main class="page__main" role="main">
       <section class="section">
         <div class="container">
-          <h1>Desapego de Roupas</h1>
-          <p>
-            Plataforma para vender, trocar ou doar peças de roupa em bom estado.
-          </p>
-          <p class="u-text-muted">
-            <!-- Esta é a página de referência do template. O conteúdo específico
-            de cada tela será implementado na Etapa 3. -->
-          </p>
+          <h1 class="u-sr-only">Desapego de Roupas</h1>
+
+          <nav class="grid grid--4" aria-label="Categorias de roupas">
+            <a href="#" class="category-card">
+              <img src="../assets/icons/category-top.svg" class="category-card__icon" alt="" />
+              <span class="category-card__label">Superior</span>
+            </a>
+            <a href="#" class="category-card">
+              <img src="../assets/icons/category-bottom.svg" class="category-card__icon" alt="" />
+              <span class="category-card__label">Inferior</span>
+            </a>
+            <a href="#" class="category-card">
+              <img src="../assets/icons/category-shoes.svg" class="category-card__icon" alt="" />
+              <span class="category-card__label">Calçados</span>
+            </a>
+            <a href="#" class="category-card">
+              <img src="../assets/icons/category-accessories.svg" class="category-card__icon" alt="" />
+              <span class="category-card__label">Acessórios</span>
+            </a>
+          </nav>
+
+          <div class="safety-notice">
+            <i class="fa-solid fa-triangle-exclamation safety-notice__icon" aria-hidden="true"></i>
+            <h2 class="safety-notice__title">Encontros Presenciais</h2>
+            <p class="safety-notice__text">
+              Sempre marque em locais públicos e movimentados e, se possível, vá acompanhado.
+            </p>
+          </div>
         </div>
       </section>
     </main>

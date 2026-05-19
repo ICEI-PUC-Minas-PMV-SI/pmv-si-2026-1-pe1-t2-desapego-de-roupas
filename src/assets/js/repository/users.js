@@ -27,3 +27,17 @@ export function save (user) {
 
     return withId;
 }
+
+export function update (user) {
+    const users = getAll();
+    const index = users.findIndex(u => u.id === user.id);
+
+    if (index === -1) {
+        return null;
+    }
+
+    users[index] = user;
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(users));
+
+    return user;
+}

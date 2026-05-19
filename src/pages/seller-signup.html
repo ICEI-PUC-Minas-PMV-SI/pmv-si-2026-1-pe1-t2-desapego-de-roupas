@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cadastro de vendedor - Desapego de Roupas</title>
+        <link rel="icon" type="image/png" href="../assets/icons/logo.png" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        />
+        <link rel="stylesheet" href="../assets/css/styles.css" />
+    </head>
+    <body>
+        <div class="page">
+            <header class="header" role="banner">
+                <div class="header__inner">
+                    <div class="header__search">
+                        <label for="site-search" class="u-sr-only">Pesquisar</label>
+                        <div class="search-field">
+                            <i class="fa-solid fa-magnifying-glass search-field__icon" aria-hidden="true"></i>
+                            <input
+                                id="site-search"
+                                type="search"
+                                class="search-field__input"
+                                placeholder="Pesquisar"
+                            />
+                        </div>
+                    </div>
+
+                    <a href="./index.html" class="header__brand" aria-label="Desapego de Roupas - Início">
+                        <img
+                            src="../assets/icons/logo.png"
+                            alt=""
+                            class="header__brand-icon"
+                            aria-hidden="true"
+                        />
+                    </a>
+
+                    <nav class="header__nav" aria-label="Navegação principal">
+                        <a href="index.html" class="header__nav-link">Início</a>
+                        <a id="nav-register" href="signup.html" class="header__nav-link">Cadastrar</a>
+                        <a id="nav-login" href="login.html" class="header__nav-link">Entrar</a>
+                        <span id="nav-username" class="header__nav-link header__nav-link--static" hidden></span>
+                        <div id="user-menu" class="user-menu" hidden>
+                            <button
+                                id="nav-avatar"
+                                type="button"
+                                class="header__avatar"
+                                aria-label="Menu do usuário"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                            >
+                                <img id="nav-avatar-img" class="header__avatar-img" src="../assets/img/avatars/avatar-1.svg" alt="" />
+                                <span id="nav-seller-badge" class="header__avatar-badge" aria-label="Vendedor" hidden>
+                                    <i class="fa-solid fa-store" aria-hidden="true"></i>
+                                </span>
+                            </button>
+                            <div id="user-menu-panel" class="user-menu__panel" hidden>
+                                <a href="profile.html" class="user-menu__item">Perfil</a>
+                                <a id="nav-become-seller" href="seller-signup.html" class="user-menu__item" hidden>Começar a vender</a>
+                                <button id="nav-logout" type="button" class="user-menu__item">Sair</button>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+            <div class="header-stripe" aria-hidden="true"></div>
+
+            <main class="page__main" role="main">
+                <section class="section">
+                    <div class="container container--form-wide">
+                        <div class="card">
+                            <header class="card__header">
+                                <h1 class="card__title">Cadastro de vendedor</h1>
+                            </header>
+                            <form class="form" id="seller-form" novalidate>
+                                <div class="form-group">
+                                    <label for="nome" class="form-label">Nome</label>
+                                    <input
+                                        type="text"
+                                        id="nome"
+                                        name="nome"
+                                        class="form-control"
+                                        placeholder="Nome"
+                                        autocomplete="name"
+                                        required
+                                    />
+                                </div>
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        name="email"
+                                        class="form-control"
+                                        placeholder="Email"
+                                        autocomplete="email"
+                                        required
+                                    />
+                                </div>
+                                <div class="grid grid--2">
+                                    <div class="form-group">
+                                        <label for="tel" class="form-label">Telefone</label>
+                                        <input
+                                            type="tel"
+                                            id="tel"
+                                            name="tel"
+                                            class="form-control"
+                                            placeholder="(00) 00000-0000"
+                                            autocomplete="tel"
+                                            maxlength="15"
+                                            required
+                                        />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="cpf" class="form-label">CPF</label>
+                                        <input
+                                            type="text"
+                                            id="cpf"
+                                            name="cpf"
+                                            class="form-control"
+                                            placeholder="000.000.000-00"
+                                            maxlength="14"
+                                            required
+                                        />
+                                    </div>
+                                </div>
+                                <div class="grid grid--2">
+                                    <div class="form-group">
+                                        <label for="cidade" class="form-label">Cidade</label>
+                                        <input
+                                            type="text"
+                                            id="cidade"
+                                            name="cidade"
+                                            class="form-control"
+                                            placeholder="Cidade"
+                                            required
+                                        />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="estado-trigger" class="form-label">Estado</label>
+                                        <div class="select" id="estado-select">
+                                            <button
+                                                type="button"
+                                                id="estado-trigger"
+                                                class="form-control select__trigger"
+                                                aria-haspopup="listbox"
+                                                aria-expanded="false"
+                                            >
+                                                <span class="select__value select__value--placeholder">Selecione</span>
+                                                <i class="fa-solid fa-chevron-down select__icon" aria-hidden="true"></i>
+                                            </button>
+                                            <ul class="select__panel" role="listbox" hidden>
+                                                <li class="select__option" role="option" data-value="AC">AC</li>
+                                                <li class="select__option" role="option" data-value="AL">AL</li>
+                                                <li class="select__option" role="option" data-value="AM">AM</li>
+                                                <li class="select__option" role="option" data-value="AP">AP</li>
+                                                <li class="select__option" role="option" data-value="BA">BA</li>
+                                                <li class="select__option" role="option" data-value="CE">CE</li>
+                                                <li class="select__option" role="option" data-value="DF">DF</li>
+                                                <li class="select__option" role="option" data-value="ES">ES</li>
+                                                <li class="select__option" role="option" data-value="GO">GO</li>
+                                                <li class="select__option" role="option" data-value="MA">MA</li>
+                                                <li class="select__option" role="option" data-value="MG">MG</li>
+                                                <li class="select__option" role="option" data-value="MS">MS</li>
+                                                <li class="select__option" role="option" data-value="MT">MT</li>
+                                                <li class="select__option" role="option" data-value="PA">PA</li>
+                                                <li class="select__option" role="option" data-value="PB">PB</li>
+                                                <li class="select__option" role="option" data-value="PE">PE</li>
+                                                <li class="select__option" role="option" data-value="PI">PI</li>
+                                                <li class="select__option" role="option" data-value="PR">PR</li>
+                                                <li class="select__option" role="option" data-value="RJ">RJ</li>
+                                                <li class="select__option" role="option" data-value="RN">RN</li>
+                                                <li class="select__option" role="option" data-value="RO">RO</li>
+                                                <li class="select__option" role="option" data-value="RR">RR</li>
+                                                <li class="select__option" role="option" data-value="RS">RS</li>
+                                                <li class="select__option" role="option" data-value="SC">SC</li>
+                                                <li class="select__option" role="option" data-value="SE">SE</li>
+                                                <li class="select__option" role="option" data-value="SP">SP</li>
+                                                <li class="select__option" role="option" data-value="TO">TO</li>
+                                            </ul>
+                                            <input type="hidden" id="estado" name="estado" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="form-error" id="seller-error" role="alert" hidden></p>
+                                <button type="submit" class="btn btn--primary btn--block">Salvar alterações</button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="footer" role="contentinfo">
+                Copyright @ 2026 | Todos os direitos reservados
+            </footer>
+        </div>
+        <script type="module" src="../assets/js/controllers/header.js"></script>
+        <script type="module" src="../assets/js/controllers/seller.js"></script>
+    </body>
+</html>
