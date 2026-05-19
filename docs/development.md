@@ -29,6 +29,8 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 |--------|--------------------------------------------------------------------------------------------------------------|-------------|------------------------------------------------------------------------------------------------------------------|
 | RF-001 | A aplicação deve permitir que o usuário entre com email e senha previamente cadastrados                      | Clayton     | `src/pages/login.html`, `assets/js/controllers/login.js`, `assets/js/services/auth.js`, `assets/js/repository/users.js`, `assets/js/repository/session.js` |
 | RF-002 | A aplicação deve indicar visualmente o usuário logado na header e permitir o logout via dropdown no avatar   | Clayton     | `src/pages/index.html`, `assets/js/controllers/header.js`, `assets/js/repository/session.js`                     |
+| RF-003 | A aplicação deve permitir o cadastro de novos usuários informando nome, email e senha | Bettina | `src/pages/signup.html` |
+
 
 ## Descrição das estruturas
 
