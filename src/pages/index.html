@@ -87,14 +87,34 @@
     <main class="page__main" role="main">
       <section class="section">
         <div class="container">
-          <h1>Desapego de Roupas</h1>
-          <p>
-            Plataforma para vender, trocar ou doar peças de roupa em bom estado.
-          </p>
-          <p class="u-text-muted">
-            <!-- Esta é a página de referência do template. O conteúdo específico
-            de cada tela será implementado na Etapa 3. -->
-          </p>
+          <h1 class="u-sr-only">Desapego de Roupas</h1>
+
+          <nav class="grid grid--4" aria-label="Categorias de roupas">
+            <a href="#" class="category-card">
+              <img src="../assets/icons/category-top.svg" class="category-card__icon" alt="" />
+              <span class="category-card__label">Superior</span>
+            </a>
+            <a href="#" class="category-card">
+              <img src="../assets/icons/category-bottom.svg" class="category-card__icon" alt="" />
+              <span class="category-card__label">Inferior</span>
+            </a>
+            <a href="#" class="category-card">
+              <img src="../assets/icons/category-shoes.svg" class="category-card__icon" alt="" />
+              <span class="category-card__label">Calçados</span>
+            </a>
+            <a href="#" class="category-card">
+              <img src="../assets/icons/category-accessories.svg" class="category-card__icon" alt="" />
+              <span class="category-card__label">Acessórios</span>
+            </a>
+          </nav>
+
+          <div class="safety-notice">
+            <i class="fa-solid fa-triangle-exclamation safety-notice__icon" aria-hidden="true"></i>
+            <h2 class="safety-notice__title">Encontros Presenciais</h2>
+            <p class="safety-notice__text">
+              Sempre marque em locais públicos e movimentados e, se possível, vá acompanhado.
+            </p>
+          </div>
         </div>
       </section>
     </main>
