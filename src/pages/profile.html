@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Meu perfil - Desapego de Roupas</title>
+        <link rel="icon" type="image/png" href="../assets/icons/logo.png" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        />
+        <link rel="stylesheet" href="../assets/css/styles.css" />
+    </head>
+    <body>
+        <div class="page">
+            <header class="header" role="banner">
+                <div class="header__inner">
+                    <div class="header__search">
+                        <label for="site-search" class="u-sr-only">Pesquisar</label>
+                        <div class="search-field">
+                            <i class="fa-solid fa-magnifying-glass search-field__icon" aria-hidden="true"></i>
+                            <input
+                                id="site-search"
+                                type="search"
+                                class="search-field__input"
+                                placeholder="Pesquisar"
+                            />
+                        </div>
+                    </div>
+
+                    <a href="./index.html" class="header__brand" aria-label="Desapego de Roupas - Início">
+                        <img
+                            src="../assets/icons/logo.png"
+                            alt=""
+                            class="header__brand-icon"
+                            aria-hidden="true"
+                        />
+                    </a>
+
+                    <nav class="header__nav" aria-label="Navegação principal">
+                        <a href="index.html" class="header__nav-link">Início</a>
+                        <a id="nav-register" href="signup.html" class="header__nav-link">Cadastrar</a>
+                        <a id="nav-login" href="login.html" class="header__nav-link">Entrar</a>
+                        <span id="nav-username" class="header__nav-link header__nav-link--static" hidden></span>
+                        <div id="user-menu" class="user-menu" hidden>
+                            <button
+                                id="nav-avatar"
+                                type="button"
+                                class="header__avatar"
+                                aria-label="Menu do usuário"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                            >
+                                <img id="nav-avatar-img" class="header__avatar-img" src="../assets/img/avatars/avatar-1.svg" alt="" />
+                                <span id="nav-seller-badge" class="header__avatar-badge" aria-label="Vendedor" hidden>
+                                    <i class="fa-solid fa-store" aria-hidden="true"></i>
+                                </span>
+                            </button>
+                            <div id="user-menu-panel" class="user-menu__panel" hidden>
+                                <a href="profile.html" class="user-menu__item">Perfil</a>
+                                <a id="nav-become-seller" href="seller-signup.html" class="user-menu__item" hidden>Começar a vender</a>
+                                <button id="nav-logout" type="button" class="user-menu__item">Sair</button>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+            <div class="header-stripe" aria-hidden="true"></div>
+
+            <main class="page__main" role="main">
+                <section class="section">
+                    <div class="container container--form-wide">
+                        <div class="card">
+                            <header class="card__header">
+                                <h1 class="card__title">Meu perfil</h1>
+                            </header>
+
+                            <div class="profile-banner">
+                                <img id="profile-photo" class="profile-banner__photo" src="" alt="Foto de perfil" />
+                                <div class="profile-banner__info">
+                                    <p class="profile-banner__name" id="profile-name"></p>
+                                    <p class="profile-banner__email" id="profile-email"></p>
+                                    <span id="profile-seller-tag" class="profile-banner__tag" hidden>
+                                        <i class="fa-solid fa-store" aria-hidden="true"></i> Vendedor
+                                    </span>
+                                </div>
+                            </div>
+
+                            <form class="form" id="profile-form" novalidate>
+                                <p class="form-label">Trocar foto</p>
+                                <div class="avatar-picker">
+                                    <button type="button" class="avatar-picker__option" data-avatar="avatar-1.svg">
+                                        <img src="../assets/img/avatars/avatar-1.svg" alt="Avatar 1" />
+                                    </button>
+                                    <button type="button" class="avatar-picker__option" data-avatar="avatar-2.svg">
+                                        <img src="../assets/img/avatars/avatar-2.svg" alt="Avatar 2" />
+                                    </button>
+                                    <button type="button" class="avatar-picker__option" data-avatar="avatar-3.svg">
+                                        <img src="../assets/img/avatars/avatar-3.svg" alt="Avatar 3" />
+                                    </button>
+                                    <button type="button" class="avatar-picker__option" data-avatar="avatar-4.svg">
+                                        <img src="../assets/img/avatars/avatar-4.svg" alt="Avatar 4" />
+                                    </button>
+                                    <button type="button" class="avatar-picker__option" data-avatar="avatar-5.svg">
+                                        <img src="../assets/img/avatars/avatar-5.svg" alt="Avatar 5" />
+                                    </button>
+                                    <button type="button" class="avatar-picker__option" data-avatar="avatar-6.svg">
+                                        <img src="../assets/img/avatars/avatar-6.svg" alt="Avatar 6" />
+                                    </button>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="nome" class="form-label">Nome</label>
+                                    <input
+                                        type="text"
+                                        id="nome"
+                                        name="nome"
+                                        class="form-control"
+                                        autocomplete="name"
+                                        required
+                                    />
+                                </div>
+
+                                <p class="form-error" id="profile-error" role="alert" hidden></p>
+                                <button type="submit" class="btn btn--primary btn--block">Salvar</button>
+                            </form>
+
+                            <div id="seller-info" class="profile-seller" hidden>
+                                <h2 class="profile-seller__title">Dados de vendedor</h2>
+                                <p><strong>Telefone:</strong> <span id="seller-tel"></span></p>
+                                <p><strong>CPF:</strong> <span id="seller-cpf"></span></p>
+                                <p><strong>Cidade:</strong> <span id="seller-cidade"></span></p>
+                                <p><strong>Estado:</strong> <span id="seller-estado"></span></p>
+                                <a href="seller-signup.html">Editar dados de vendedor</a>
+                            </div>
+
+                            <div id="not-seller" class="card__footer" hidden>
+                                Quer vender? <a href="seller-signup.html">Começar a vender</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="footer" role="contentinfo">
+                Copyright @ 2026 | Todos os direitos reservados
+            </footer>
+        </div>
+        <script type="module" src="../assets/js/controllers/header.js"></script>
+        <script type="module" src="../assets/js/controllers/profile.js"></script>
+    </body>
+</html>

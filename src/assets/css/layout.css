@@ -152,6 +152,13 @@
   font-size: 9px;
 }
 
+.header__avatar-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--radius-full);
+}
+
 .header__avatar:hover {
   transform: scale(1.05);
 }

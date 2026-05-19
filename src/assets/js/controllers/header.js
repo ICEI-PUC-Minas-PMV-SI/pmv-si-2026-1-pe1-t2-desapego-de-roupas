@@ -25,6 +25,9 @@ if (user) {
     const avatar = document.getElementById("nav-avatar");
     const panel = document.getElementById("user-menu-panel");
 
+    document.getElementById("nav-avatar-img").src =
+        "../assets/img/avatars/" + (user.avatar ?? "avatar-1.svg");
+
     avatar.addEventListener("click", () => {
         const willOpen = panel.hidden;
         panel.hidden = !willOpen;

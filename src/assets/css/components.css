@@ -263,6 +263,103 @@
   text-decoration: none;
 }
 
+/* Banner do perfil */
+.profile-banner {
+  display: flex;
+  align-items: center;
+  gap: var(--space-5);
+  padding-bottom: var(--space-5);
+  margin-bottom: var(--space-5);
+  border-bottom: var(--border-width) solid var(--color-border-soft);
+}
+
+.profile-banner__photo {
+  flex-shrink: 0;
+  width: 96px;
+  height: 96px;
+  border-radius: var(--radius-full);
+}
+
+.profile-banner__info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.profile-banner__name {
+  margin: 0;
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-primary-dark);
+}
+
+.profile-banner__email {
+  margin: 0;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+.profile-banner__tag {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  align-self: flex-start;
+  margin-top: var(--space-1);
+  padding: var(--space-1) var(--space-3);
+  background-color: var(--color-success);
+  color: var(--color-text-on-primary);
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+}
+
+/* Seletor de avatar */
+.avatar-picker {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-3);
+}
+
+.avatar-picker__option {
+  width: 56px;
+  height: 56px;
+  padding: 0;
+  border: var(--border-width-thick) solid transparent;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition:
+    border-color var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+.avatar-picker__option:hover {
+  transform: scale(1.05);
+}
+
+.avatar-picker__option--selected {
+  border-color: var(--color-primary);
+}
+
+.avatar-picker__option img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--radius-full);
+}
+
+.profile-seller {
+  margin-top: var(--space-5);
+  padding-top: var(--space-5);
+  border-top: var(--border-width) solid var(--color-border-soft);
+}
+
+.profile-seller__title {
+  font-size: var(--font-size-lg);
+  color: var(--color-primary-dark);
+  margin-bottom: var(--space-3);
+}
+
 /* Select customizado (dropdown estilizável) */
 .select {
   position: relative;
