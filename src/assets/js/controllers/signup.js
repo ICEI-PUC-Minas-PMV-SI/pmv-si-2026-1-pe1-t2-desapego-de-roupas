@@ -21,7 +21,7 @@ form.addEventListener("submit", (e) => {
     const result = register({ nome, email, senha });
 
     if (result.ok) {
-        window.location.href = "./index.html";
+        window.location.href = "./main.html";
     } else {
         errorEl.textContent = result.error;
         errorEl.hidden = false;

@@ -87,7 +87,7 @@ form.addEventListener("submit", (e) => {
     });
 
     if (result.ok) {
-        window.location.href = "./index.html";
+        window.location.href = "./main.html";
     } else {
         errorEl.textContent = result.error;
         errorEl.hidden = false;

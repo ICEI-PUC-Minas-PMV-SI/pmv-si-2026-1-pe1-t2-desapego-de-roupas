@@ -9,7 +9,7 @@ Este diretório contém o código-fonte da aplicação web Desapego de Roupas.
 ```
 src/
 ├── pages/
-│   ├── index.html              Página inicial
+│   ├── main.html               Página inicial
 │   ├── login.html              Tela de entrada (autenticação)
 │   ├── cadastro.html           Cadastro de usuários (TODO)
 │   └── perfil.html             Perfil do usuário (TODO)
