@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cadastro de Vendedores</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Courier New', Courier, monospace;
+      background: #c9bfdc;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .layout {
+      display: flex;
+      flex: 1;
+    }
+
+    /* ── Sidebar ── */
+    aside {
+      width: 300px;
+      min-width: 300px;
+      background: #b8aace;
+      padding: 2rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .nav-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #4a3f5c;
+      text-decoration: none;
+      font-size: 1rem;
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    .nav-item svg {
+      width: 22px;
+      height: 22px;
+      fill: #4a3f5c;
+      flex-shrink: 0;
+    }
+
+    .nav-item:hover { color: #2c2040; }
+    .nav-item:hover svg { fill: #2c2040; }
+
+    /* ── Conteúdo principal ── */
+    main {
+      flex: 1;
+      background: #ede8f5;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 3rem 2rem;
+    }
+
+    .card {
+      background: #fff;
+      border: 1.5px solid #9b8bbf;
+      border-radius: 4px;
+      padding: 2.5rem 3rem;
+      width: 100%;
+      max-width: 520px;
+    }
+
+    .card h1 {
+      text-align: center;
+      font-size: 1.3rem;
+      font-weight: normal;
+      color: #4a3f5c;
+      margin-bottom: 2rem;
+      letter-spacing: 0.05em;
+    }
+
+    .field {
+      margin-bottom: 1.4rem;
+    }
+
+    .field label {
+      display: block;
+      font-size: 0.95rem;
+      color: #4a3f5c;
+      margin-bottom: 0.5rem;
+    }
+
+    .field input,
+    .field select {
+      width: 100%;
+      height: 42px;
+      border: 1.5px solid #9b8bbf;
+      border-radius: 3px;
+      padding: 0 12px;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 0.9rem;
+      color: #4a3f5c;
+      background: #fff;
+      outline: none;
+    }
+
+    .field input::placeholder,
+    .field select option[value=""] {
+      color: #9b8bbf;
+    }
+
+    .field input:focus,
+    .field select:focus {
+      border-color: #6b5b8e;
+    }
+
+    .field select {
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%239b8bbf' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 14px center;
+      cursor: pointer;
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .btn-salvar {
+      display: block;
+      width: 60%;
+      margin: 2rem auto 0;
+      height: 44px;
+      background: #6b5b8e;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 0.95rem;
+      cursor: pointer;
+      letter-spacing: 0.04em;
+    }
+
+    .btn-salvar:hover { background: #4a3f5c; }
+    .btn-salvar:active { transform: scale(0.99); }
+
+    /* ── Footer ── */
+    footer {
+      background: #b8aace;
+      text-align: center;
+      padding: 1rem;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 0.85rem;
+      color: #4a3f5c;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="layout">
+
+    <!-- Sidebar -->
+    <aside>
+      <a href="#" class="nav-item">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/>
+        </svg>
+        Perfil
+      </a>
+      <a href="#" class="nav-item">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/>
+        </svg>
+        Cadastro de roupas
+      </a>
+      <a href="#" class="nav-item">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/>
+        </svg>
+        Cadastro de vendedores
+      </a>
+      <a href="#" class="nav-item">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10.09 15.59L11.5 17l5-5-5-5-1.41 1.41L12.67 11H3v2h9.67l-2.58 2.59zM19 3H5a2 2 0 00-2 2v4h2V5h14v14H5v-4H3v4a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2z"/>
+        </svg>
+        Sair
+      </a>
+    </aside>
+
+    <!-- Conteúdo -->
+    <main>
+      <div class="card">
+        <h1>Cadastro de vendedores</h1>
+
+        <div class="field">
+          <label>Nome</label>
+          <input type="text" placeholder="Nome da pessoa" />
+        </div>
+
+        <div class="field">
+          <label>Email</label>
+          <input type="email" placeholder="Email da pessoa" />
+        </div>
+
+        <div class="row">
+          <div class="field">
+            <label>Telefone</label>
+            <input type="tel" placeholder="(00) 00000-0000" id="tel" maxlength="15" />
+          </div>
+          <div class="field">
+            <label>CPF</label>
+            <input type="text" placeholder="000.000.000-00" id="cpf" maxlength="14" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field">
+            <label>Cidade</label>
+            <input type="text" placeholder="Cidade da pessoa" />
+          </div>
+          <div class="field">
+            <label>Estado</label>
+            <select>
+              <option value="" disabled selected>Selecione</option>
+              <option>AC</option><option>AL</option><option>AM</option><option>AP</option>
+              <option>BA</option><option>CE</option><option>DF</option><option>ES</option>
+              <option>GO</option><option>MA</option><option>MG</option><option>MS</option>
+              <option>MT</option><option>PA</option><option>PB</option><option>PE</option>
+              <option>PI</option><option>PR</option><option>RJ</option><option>RN</option>
+              <option>RO</option><option>RR</option><option>RS</option><option>SC</option>
+              <option>SE</option><option>SP</option><option>TO</option>
+            </select>
+          </div>
+        </div>
+
+        <button class="btn-salvar">Salvar alterações</button>
+      </div>
+    </main>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    Copyright @ 2026 | Todos os direitos reservados
+  </footer>
+
+  <script>
+    document.getElementById('cpf').addEventListener('input', function(e) {
+      let v = e.target.value.replace(/\D/g, '');
+      if (v.length > 3) v = v.slice(0,3) + '.' + v.slice(3);
+      if (v.length > 7) v = v.slice(0,7) + '.' + v.slice(7);
+      if (v.length > 11) v = v.slice(0,11) + '-' + v.slice(11);
+      e.target.value = v.slice(0,14);
+    });
+
+    document.getElementById('tel').addEventListener('input', function(e) {
+      let v = e.target.value.replace(/\D/g, '');
+      if (v.length > 0) v = '(' + v;
+      if (v.length > 3) v = v.slice(0,3) + ') ' + v.slice(3);
+      if (v.length > 10) v = v.slice(0,10) + '-' + v.slice(10);
+      e.target.value = v.slice(0,15);
+    });
+  </script>
+
+</body>
+</html>
