@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastrar roupa - Desapego de Roupas</title>
+
+    <link rel="icon" type="image/png" href="../assets/icons/logo.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap"
+        rel="stylesheet"
+    />
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+
+<body>
+    <div class="page page--auth">
+        <main class="page__main page__main--auth" role="main">
+            <section class="section">
+                <div class="container container--form">
+                    <div class="card">
+
+                        <header class="card__header">
+                            <h1 class="card__title">Cadastrar roupa</h1>
+                        </header>
+
+                        <form class="form" id="clothes-form" novalidate>
+
+                            <div class="form-group">
+                                <label for="nome" class="form-label u-sr-only">
+                                    Nome da roupa
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="nome"
+                                    name="nome"
+                                    class="form-control"
+                                    placeholder="Nome da roupa"
+                                    required
+                                />
+                            </div>
+
+                            
+                                <select
+                                    id="categoria"
+                                    name="categoria"
+                                    class="form-control"
+                                    required
+>
+                                <option value="">Selecione uma categoria</option>
+
+                                <option value="Superior">Superior</option>
+
+                                <option value="Inferior">Inferior</option>
+                                
+                                <option value="Calçados">Calçados</option>
+
+                                <option value="Acessórios">Acessórios</option>
+                                
+                                </select>
+                            
+                            
+
+                            <div class="form-group">
+                                <label for="tamanho" class="form-label u-sr-only">
+                                    Tamanho
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="tamanho"
+                                    name="tamanho"
+                                    class="form-control"
+                                    placeholder="Tamanho"
+                                    required
+                                />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="cor" class="form-label u-sr-only">
+                                    Cor
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="cor"
+                                    name="cor"
+                                    class="form-control"
+                                    placeholder="Cor"
+                                    required
+                                />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="preco" class="form-label u-sr-only">
+                                    Preço
+                                </label>
+
+                                <input
+                                    type="number"
+                                    id="preco"
+                                    name="preco"
+                                    class="form-control"
+                                    placeholder="Preço"
+                                    required
+                                />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="descricao" class="form-label u-sr-only">
+                                    Descrição
+                                </label>
+
+                                <textarea
+                                    id="descricao"
+                                    name="descricao"
+                                    class="form-control"
+                                    placeholder="Descrição"
+                                    rows="4"
+                                    required
+                                ></textarea>
+                            </div>
+
+                            <p
+                                class="form-error"
+                                id="clothes-error"
+                                role="alert"
+                                hidden
+                            ></p>
+
+                            
+
+                            <div class="form-group">
+
+                            <input
+                                type="file"
+                                id="imagem"
+                                name="imagem"
+                                accept="image/*"
+                                multiple
+                                style="display: none;"
+                                required
+                            />
+
+    
+                            <button
+                                type="button"
+                                id="select-images"
+                                class="btn btn--primary btn--block"
+                            >   Escolher imagens
+                            </button>
+
+    
+                            <button
+                                type="button"
+                                id="remove-image"
+                                class="btn btn--block"
+                            >
+                                Remover imagem
+                            </button>
+
+    
+                            <p
+                                id="image-name"
+                                class="form-helper"
+                            >
+                                Nenhum arquivo selecionado
+                            </p>
+
+                            <div
+                                id="image-preview"
+                                class="image-preview"
+                            ></div>
+
+                            
+                            </div>
+
+
+                                
+                            
+
+                            <button
+                                type="submit"
+                                class="btn btn--primary btn--block"
+                            >
+                                Cadastrar roupa
+                            </button>
+
+                        </form>
+
+                        <div class="card__footer">
+                            <a href="main.html">Voltar para início</a>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer" role="contentinfo">
+            Copyright @ 2026 | Todos os direitos reservados
+        </footer>
+    </div>
+
+    
+    <script
+        type="module"
+        src="../assets/js/controllers/cadastro-roupas.js"
+    ></script>
+
+</body>
+</html>

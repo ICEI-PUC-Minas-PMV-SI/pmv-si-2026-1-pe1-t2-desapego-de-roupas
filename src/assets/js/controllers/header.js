@@ -14,10 +14,21 @@ if (user) {
     username.hidden = false;
 
     if (user.vendedor) {
-        document.getElementById("nav-seller-badge").hidden = false;
-    } else {
-        document.getElementById("nav-become-seller").hidden = false;
-    }
+
+    document.getElementById(
+        "nav-seller-badge"
+    ).hidden = false;
+
+    document.getElementById(
+        "nav-register-clothes"
+    ).hidden = false;
+
+} else {
+
+    document.getElementById(
+        "nav-become-seller"
+    ).hidden = false;
+}
 
     const userMenu = document.getElementById("user-menu");
     userMenu.hidden = false;
