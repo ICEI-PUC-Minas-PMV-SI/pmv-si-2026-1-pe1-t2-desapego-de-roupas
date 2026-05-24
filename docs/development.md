@@ -110,6 +110,10 @@ RF-05: O sistema deve permitir ao usuário inserir informações adicionais (tam
 
 ### Arquivos da implementação
 
+`src/assets/js/controllers/cadastro-roupas.js`
+`src/assets/js/repository/cadastro-roupas.js`
+`src/assets/js/services/cadastro-roupas.js`
+`src/pages/cadastro-roupas.html`
 
 ### Instruções de acesso
 
