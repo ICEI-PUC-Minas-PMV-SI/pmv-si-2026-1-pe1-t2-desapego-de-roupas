@@ -66,6 +66,8 @@ Em seguida, clique em “Entrar” na barra de navegação superior para acessar
 
 Para realizar o logout, clique no avatar do usuário no canto superior da tela e selecione a opção “Sair”.
 
+---
+
 
 ## Descrição das estruturas
 
