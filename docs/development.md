@@ -6,18 +6,20 @@ Pré-requisitos: [Especificação do Projeto](docs/especification.md).
 
 ### Requisitos Funcionais
 
-# Tela de Cadastro (RF-01)
+**Tela de Cadastro (RF-01)**
 
 Responsável: Bettina
 O acesso à tela de cadastro pode ser realizado através da opção “Cadastrar” disponível na barra de navegação superior.
 Exemplo da tela de cadastro:
-<img src="https://cdn.discordapp.com/attachments/1481062934951100539/1508173437041115477/Captura_de_tela_2026-05-24_151954.png?ex=6a149377&is=6a1341f7&hm=dfe2cce6bb39971b197ba0f0a3921dc7c080d2ef7a51907916e8cc05d0986179&" alt="Tela de Cadastro" width="300">
-# Requisito atendido
+<img src="https://cdn.discordapp.com/attachments/1481062934951100539/1508173437041115477/Captura_de_tela_2026-05-24_151954.png?ex=6a149377&is=6a1341f7&hm=dfe2cce6bb39971b197ba0f0a3921dc7c080d2ef7a51907916e8cc05d0986179&" alt="Tela de Cadastro">
+**Requisito atendido**
 RF-01: O sistema deve permitir que o usuário faça o cadastro.
-# Artefatos relacionados
+**Artefatos relacionados**
 `src/pages/signup.html`
-# Instruções de acesso
+**Instruções de acesso**
 Acesse a aplicação pelo navegador através da seguinte URL: https://icei-puc-minas-pmv-si.github.io/pmv-si-2026-1-pe1-t2-desapego-de-roupas/src/pages/main.html#
+Ao clicar em “Cadastrar” na barra de navegação superior, terá acesso a página de cadastro.
+
 
 | ID     | Descrição do Requisito                                                                                       | Responsável | Artefato Criado                                                                                                  |
 |--------|--------------------------------------------------------------------------------------------------------------|-------------|------------------------------------------------------------------------------------------------------------------|
