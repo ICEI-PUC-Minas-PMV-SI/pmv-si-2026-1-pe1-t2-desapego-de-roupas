@@ -4,15 +4,13 @@
 
 Pré-requisitos: [Especificação do Projeto](docs/especification.md).
 
-### Requisitos Funcionais
+## Requisitos Funcionais
 
-**Tela de Cadastro (RF-01)**
+### Tela de Cadastro (RF-01)
 
 Responsável: Bettina
 
-O acesso à tela de cadastro pode ser realizado através da opção “Cadastrar” disponível na barra de navegação superior.
-
-Exemplo da tela de cadastro:
+**Exemplo da tela de cadastro:**
 
 <img src="https://cdn.discordapp.com/attachments/1481062934951100539/1508173437041115477/Captura_de_tela_2026-05-24_151954.png?ex=6a149377&is=6a1341f7&hm=dfe2cce6bb39971b197ba0f0a3921dc7c080d2ef7a51907916e8cc05d0986179&" alt="Tela de Cadastro">
 
@@ -30,12 +28,43 @@ Acesse a aplicação pelo navegador através da seguinte URL: https://icei-puc-m
 
 Em seguida, clique na opção “Cadastrar” na barra de navegação superior para acessar a tela de cadastro.
 
+---
 
-| ID     | Descrição do Requisito                                                                                       | Responsável | Artefato Criado                                                                                                  |
-|--------|--------------------------------------------------------------------------------------------------------------|-------------|------------------------------------------------------------------------------------------------------------------|
-| RF-001 | A aplicação deve permitir que o usuário entre com email e senha previamente cadastrados                      | Clayton     | `src/pages/login.html`, `assets/js/controllers/login.js`, `assets/js/services/auth.js`, `assets/js/repository/users.js`, `assets/js/repository/session.js` |
-| RF-002 | A aplicação deve indicar visualmente o usuário logado na header e permitir o logout via dropdown no avatar   | Clayton     | `src/pages/index.html`, `assets/js/controllers/header.js`, `assets/js/repository/session.js`                     |
-| RF-003 | A aplicação deve permitir o cadastro de novos usuários informando nome, email e senha | Bettina | `src/pages/signup.html` |
+### Tela de Login (RF-02)
+
+Responsável: Clayton
+
+**Exemplo da tela de login:**
+
+<img src="https://cdn.discordapp.com/attachments/1481062934951100539/1508179945417867435/Captura_de_tela_2026-05-24_154851.png?ex=6a149987&is=6a134807&hm=cd69c8912fccbef0b6aba5c8573fa57b7d7b6efb26fdc66685bd6ae116269707&" alt="Tela de Login">
+
+### Requisito atendido
+
+RF-02: O sistema deve permitir ao usuário conseguir fazer login e logout.
+
+### Arquivos da implementação
+
+`src/pages/login.html`
+
+`assets/js/controllers/login.js`
+
+`assets/js/services/auth.js`
+
+`assets/js/repository/session.js`
+
+`src/pages/index.html`
+ 
+`assets/js/controllers/header.js`
+ 
+`assets/js/repository/session.js`
+
+### Instruções de acesso
+
+Acesse a aplicação pelo navegador através da seguinte URL: https://icei-puc-minas-pmv-si.github.io/pmv-si-2026-1-pe1-t2-desapego-de-roupas/src/pages/main.html
+
+Em seguida, clique em “Entrar” na barra de navegação superior para acessar a tela de login.
+
+Para realizar o logout, clique no avatar do usuário no canto superior da tela e selecione a opção “Sair”.
 
 
 ## Descrição das estruturas
