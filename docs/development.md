@@ -72,11 +72,11 @@ Para realizar o logout, clique no avatar do usuário no canto superior da tela e
 
 ### Tela de Cadastro de Vendedores
 
-Responsável: João Lucca 
+Responsável: Amadeu 
 
 **Exemplo da tela de cadastro de vendedor:**
 
-<img src="https://cdn.discordapp.com/attachments/1481062934951100539/1508185520692265061/Captura_de_tela_2026-05-24_161110.png?ex=6a149eb8&is=6a134d38&hm=bdd6efd3b9adb21e7f16bd0edb21a58313f8dfb993370ce553ac6e99612edbcb&" alt="Tela de Cadastro de Vendedores">
+<img src="https://media.discordapp.net/attachments/1481062934951100539/1508210696536457348/Captura_de_tela_2026-05-24_174953.png?ex=6a14b62b&is=6a1364ab&hm=4ff3575c65e06abf054bc2a2148ac3b1995993aee2bfdf8472c3f0cf447e0863&=&format=webp&quality=lossless&width=786&height=369" alt="Tela de Cadastro de Vendedores">
 
 ### Requisito atendido
 
