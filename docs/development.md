@@ -95,6 +95,34 @@ Acesse a opção de começar a vender disponível na área do perfil do usuário
 
 ---
 
+### Tela de Cadastro de Roupas
+
+Responsável: João
+
+**Exemplo da tela de cadastro de roupas:**
+
+<img src="https://cdn.discordapp.com/attachments/1481062934951100539/1508210697069395988/Captura_de_tela_2026-05-24_175106.png?ex=6a14b62b&is=6a1364ab&hm=d6b3878dcd4610d94e08bcaa77e10fa5562a1b2c83deb00800575bd2faa23ccb&" alt="Tela de Cadastro de Roupas">
+
+### Requisitos atendidos
+
+RF-03: O sistema deve permitir ao usuário publicar uma roupa para desapego.  
+RF-05: O sistema deve permitir ao usuário inserir informações adicionais (tamanho, cor e descrição).
+
+### Arquivos da implementação
+
+
+### Instruções de acesso
+
+Acesse a aplicação pelo navegador através da seguinte URL: https://icei-puc-minas-pmv-si.github.io/pmv-si-2026-1-pe1-t2-desapego-de-roupas/src/pages/main.html
+
+Em seguida, realize login no sistema.
+
+Para realizar o cadastro de vendedor, clique no avatar do usuário e selecione a opção começar a vender.
+
+Para cadastrar uma roupa, utilize a opção “Cadastrar roupa” disponível no menu superior.
+
+---
+
 ## Descrição das estruturas
 
 A persistência é feita via `localStorage`. Cada "tabela" corresponde a uma chave.
