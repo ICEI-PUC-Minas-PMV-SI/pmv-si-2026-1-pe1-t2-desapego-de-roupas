@@ -1,29 +1,23 @@
 # Programação de Funcionalidades
 
-Implementação do sistema descritas por meio dos requisitos funcionais e/ou não funcionais. Deve relacionar os requisitos atendidos os artefatos criados (código fonte) além das estruturas de dados utilizadas e as instruções para acesso e verificação da implementação que deve estar funcional no ambiente de hospedagem.
-
-Para cada requisito funcional, pode ser entregue um artefato desse tipo.
-
-O professor Rommel Carneiro apresenta alguns exemplos prontos para serem utilizados como referência:
-- Login do sistema: [https://repl.it/@rommelpuc/LoginApp](https://repl.it/@rommelpuc/LoginApp) 
-- Cadastro de Contatos: [https://repl.it/@rommelpuc/Cadastro-de-Contatos](https://repl.it/@rommelpuc/Cadastro-de-Contatos)
-
-
-> **Links Úteis**:
->
-> - [Trabalhando com HTML5 Local Storage e JSON](https://www.devmedia.com.br/trabalhando-com-html5-local-storage-e-json/29045)
-> - [JSON Tutorial](https://www.w3resource.com/JSON)
-> - [JSON Data Set Sample](https://opensource.adobe.com/Spry/samples/data_region/JSONDataSetSample.html)
-> - [JSON - Introduction (W3Schools)](https://www.w3schools.com/js/js_json_intro.asp)
-> - [JSON Tutorial (TutorialsPoint)](https://www.tutorialspoint.com/json/index.htm)
-
-## Exemplo
-
 ## Requisitos Atendidos
 
-As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais que relacionam o escopo do projeto com os artefatos criados:
+Pré-requisitos: [Especificação do Projeto](docs/especification.md).
 
 ### Requisitos Funcionais
+
+# Tela de Cadastro (RF-01)
+
+Responsável: Bettina
+O acesso à tela de cadastro pode ser realizado através da opção “Cadastrar” disponível na barra de navegação superior.
+Exemplo da tela de cadastro:
+<img src="https://cdn.discordapp.com/attachments/1481062934951100539/1508173437041115477/Captura_de_tela_2026-05-24_151954.png?ex=6a149377&is=6a1341f7&hm=dfe2cce6bb39971b197ba0f0a3921dc7c080d2ef7a51907916e8cc05d0986179&" alt="Tela de Cadastro" width="300">
+# Requisito atendido
+RF-01: O sistema deve permitir que o usuário faça o cadastro.
+# Artefatos relacionados
+`src/pages/signup.html`
+# Instruções de acesso
+Acesse a aplicação pelo navegador através da seguinte URL: https://icei-puc-minas-pmv-si.github.io/pmv-si-2026-1-pe1-t2-desapego-de-roupas/src/pages/main.html#
 
 | ID     | Descrição do Requisito                                                                                       | Responsável | Artefato Criado                                                                                                  |
 |--------|--------------------------------------------------------------------------------------------------------------|-------------|------------------------------------------------------------------------------------------------------------------|
