@@ -76,7 +76,7 @@ Responsável: João Lucca
 
 **Exemplo da tela de cadastro de vendedor:**
 
-<img src="https://cdn.discordapp.com/attachments/1481062934951100539/1508182346304716870/Captura_de_tela_2026-05-24_155831.png?ex=6a149bc4&is=6a134a44&hm=ebc04e549b2c486643976774d9077efb0606b78c54345dfc3cae537498bed7f3&" alt="Tela de Cadastro de Vendedores">
+<img src="https://cdn.discordapp.com/attachments/1481062934951100539/1508185520692265061/Captura_de_tela_2026-05-24_161110.png?ex=6a149eb8&is=6a134d38&hm=bdd6efd3b9adb21e7f16bd0edb21a58313f8dfb993370ce553ac6e99612edbcb&" alt="Tela de Cadastro de Vendedores">
 
 ### Requisito atendido
 
