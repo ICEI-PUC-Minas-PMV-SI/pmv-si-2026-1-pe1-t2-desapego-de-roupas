@@ -22,6 +22,8 @@ RF-01: O sistema deve permitir que o usuário faça o cadastro.
 
 `src/pages/signup.html`
 
+`src/pages/index.html`
+
 ### Instruções de acesso
 
 Acesse a aplicação pelo navegador através da seguinte URL: https://icei-puc-minas-pmv-si.github.io/pmv-si-2026-1-pe1-t2-desapego-de-roupas/src/pages/main.html
@@ -68,6 +70,30 @@ Para realizar o logout, clique no avatar do usuário no canto superior da tela e
 
 ---
 
+### Tela de Cadastro de Vendedores
+
+Responsável: João Lucca 
+
+Exemplo da tela de cadastro de vendedor:
+
+<img src="https://cdn.discordapp.com/attachments/1481062934951100539/1508182346304716870/Captura_de_tela_2026-05-24_155831.png?ex=6a149bc4&is=6a134a44&hm=ebc04e549b2c486643976774d9077efb0606b78c54345dfc3cae537498bed7f3&" alt="Tela de Cadastro de Vendedores">
+
+### Requisito atendido
+
+RF-03: O sistema deve permitir ao usuário publicar uma roupa para desapego.
+
+### Arquivos da implementação
+
+
+### Instruções de acesso
+
+Acesse a aplicação pelo navegador através da seguinte URL: https://icei-puc-minas-pmv-si.github.io/pmv-si-2026-1-pe1-t2-desapego-de-roupas/src/pages/main.html
+
+Em seguida, realize login no sistema para ter acesso ao perfil.
+
+Acesse a opção de começar a vender disponível na área do perfil do usuário.
+
+---
 
 ## Descrição das estruturas
 
