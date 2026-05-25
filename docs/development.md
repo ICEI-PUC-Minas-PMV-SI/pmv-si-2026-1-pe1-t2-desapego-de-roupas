@@ -84,6 +84,9 @@ RF-03: O sistema deve permitir ao usuário publicar uma roupa para desapego.
 
 ### Arquivos da implementação
 
+src/pages/seller-signup.html
+src/assets/js/controllers/seller.js
+src/assets/js/services/seller.js
 
 ### Instruções de acesso
 
