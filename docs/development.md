@@ -135,33 +135,6 @@ Para cadastrar uma roupa, utilize a opção “Cadastrar roupa” disponível no
 
 ---
 
-## Descrição das estruturas
-
-A persistência é feita via `localStorage`. Cada "tabela" corresponde a uma chave.
-
-### Usuário (chave `users`)
-
-Array de objetos. Acessado por `assets/js/repository/users.js`.
-
-| **Nome** | **Tipo**            | **Descrição**                                            | **Exemplo**                              |
-|----------|---------------------|----------------------------------------------------------|------------------------------------------|
-| id       | string (UUID v4)    | Identificador único, gerado por `generateUUID()`         | `"7b9c4d06-be0d-414a-9a06-14b25a865e75"` |
-| login    | string              | Nome de usuário (username)                               | `"admin"`                                |
-| email    | string              | Email do usuário (chave usada na tela de login)          | `"admin@abc.com"`                        |
-| nome     | string              | Nome completo, exibido na header quando logado           | `"Administrador do Sistema"`             |
-| senha    | string (texto puro) | Senha do usuário. **Sem hash** — limitação do escopo.    | `"123"`                                  |
-
-### Sessão (chave `current_user`)
-
-Objeto único (não array) com o mesmo formato do usuário. Representa quem está logado no momento. É criado por `repository/session.js → save(user)` no login bem-sucedido, e removido por `clear()` no logout.
-
-| **Estado**             | **Conteúdo de `current_user`**           |
-|------------------------|------------------------------------------|
-| Usuário não logado     | `null` (chave não existe no localStorage) |
-| Usuário logado         | Objeto completo do usuário                |
-
----
-
 ### Tela de Catálogo de Roupas
 
 Responsável: Rafael 
@@ -189,3 +162,32 @@ Em seguida, realize login no sistema.
 Acesse a opção "Catálogo" disponível no menu superior para visualizar as roupas cadastradas.
 
 Para filtrar por categoria, clique em uma das opções exibidas na tela (Superior, Inferior, Calçados ou Acessórios).
+
+---
+
+## Descrição das estruturas
+
+A persistência é feita via `localStorage`. Cada "tabela" corresponde a uma chave.
+
+### Usuário (chave `users`)
+
+Array de objetos. Acessado por `assets/js/repository/users.js`.
+
+| **Nome** | **Tipo**            | **Descrição**                                            | **Exemplo**                              |
+|----------|---------------------|----------------------------------------------------------|------------------------------------------|
+| id       | string (UUID v4)    | Identificador único, gerado por `generateUUID()`         | `"7b9c4d06-be0d-414a-9a06-14b25a865e75"` |
+| login    | string              | Nome de usuário (username)                               | `"admin"`                                |
+| email    | string              | Email do usuário (chave usada na tela de login)          | `"admin@abc.com"`                        |
+| nome     | string              | Nome completo, exibido na header quando logado           | `"Administrador do Sistema"`             |
+| senha    | string (texto puro) | Senha do usuário. **Sem hash** — limitação do escopo.    | `"123"`                                  |
+
+### Sessão (chave `current_user`)
+
+Objeto único (não array) com o mesmo formato do usuário. Representa quem está logado no momento. É criado por `repository/session.js → save(user)` no login bem-sucedido, e removido por `clear()` no logout.
+
+| **Estado**             | **Conteúdo de `current_user`**           |
+|------------------------|------------------------------------------|
+| Usuário não logado     | `null` (chave não existe no localStorage) |
+| Usuário logado         | Objeto completo do usuário                |
+
+
