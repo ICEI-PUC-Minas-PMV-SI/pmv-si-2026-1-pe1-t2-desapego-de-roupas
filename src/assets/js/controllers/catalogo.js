@@ -9,6 +9,7 @@ roupas.forEach((roupa) => {
     const card = document.createElement("article");
 
     card.innerHTML = `
+    <img src="${roupa.imagens?.[0] ?? ''}" alt="${roupa.nome}" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px;" >
     <h3>${roupa.nome}</h3>
     <p>${roupa.categoria} | ${roupa.tamanho} | ${roupa.cor}</p>
     <p>R$ ${roupa.preco}</p>
