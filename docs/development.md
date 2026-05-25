@@ -160,3 +160,32 @@ Objeto único (não array) com o mesmo formato do usuário. Representa quem est�
 | Usuário não logado     | `null` (chave não existe no localStorage) |
 | Usuário logado         | Objeto completo do usuário                |
 
+---
+
+### Tela de Catálogo de Roupas
+
+Responsável: Rafael 
+
+**Exemplo de tela de Catálogo de roupas:**
+
+<img width="1213" height="952" alt="image" src="https://github.com/user-attachments/assets/a2fabb16-9278-4701-a9e0-aff89d25aaa9" />
+
+### Requisitos atendidos
+
+RF-10: O sistema deve permitir filtragem das peças.
+
+### Arquivos da implementação
+
+`src/pages/catalogo.html`
+
+`src/assets/js/controllers/catalogo.js`
+
+### Instruções de acesso
+
+Acesse a aplicação pelo navegador através da seguinte URL: https://icei-puc-minas-pmv-si.github.io/pmv-si-2026-1-pe1-t2-desapego-de-roupas/src/pages/main.html
+
+Em seguida, realize login no sistema.
+
+Acesse a opção "Catálogo" disponível no menu superior para visualizar as roupas cadastradas.
+
+Para filtrar por categoria, clique em uma das opções exibidas na tela (Superior, Inferior, Calçados ou Acessórios).
