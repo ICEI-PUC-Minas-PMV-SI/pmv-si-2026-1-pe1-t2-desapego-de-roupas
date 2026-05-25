@@ -1,8 +1,6 @@
 import { getRoupas } from "../repository/cadastro-roupas.js";
 
-const container = document.querySelector(".container");
-const filtroCat = document.getElementById("filtro-categoria");
-const btnBuscar = document.querySelector("button");
+const container = document.getElementById("lista-roupas");
 
 function renderizarCards(roupas) {
     container.innerHTML = ""; // Limpa o container antes de renderizar de novo
@@ -21,10 +19,8 @@ roupas.forEach((roupa) => {
 });
 }
 
-function buscar() {
+function buscar(categoriaSelecionada = "") {
     const roupas = getRoupas();
-    const categoriaSelecionada = filtroCat.value;
-
     const resultado = categoriaSelecionada
         ? roupas.filter(r => r.categoria === categoriaSelecionada)
         : roupas;
@@ -34,4 +30,9 @@ function buscar() {
 
 buscar(); // Renderiza as roupas quando carregar a página
 
-btnBuscar.addEventListener("click", buscar);  //Filtro quando clicar no botão de buscar
+document.querySelectorAll(".category-card").forEach(card => {
+    card.addEventListener("click", (e) => {
+        e.preventDefault();
+        buscar(card.dataset.category);
+    });
+});

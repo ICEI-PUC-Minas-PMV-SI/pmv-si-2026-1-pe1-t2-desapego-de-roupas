@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8" />
@@ -22,37 +22,82 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
     <link rel="stylesheet" href="../assets/css/styles.css" />
+
 </head>
 
 <body>
     <div class="page">
 
-        <header>
-            <h1>Desapego de Roupas</h1>
-            <nav>
-                <a href="main.html">Início</a>
-                <a href="catalogo.html">Catálogo</a>
-                <a href="cadastro-roupas.html">Cadastrar roupa</a>
+        <header class ="header" role="banner">
+            <div class="header__inner">
+                <div class="header__search">
+                    <label for="site-search" class="u-sr-only">Pesquisar</label>
+                    <div class="search-field">
+                        <i class="fa-solid fa-magnifying-glass search-field__icon" aria-hidden="true"></i>
+                        <input id="site-search" type="search" class="search-field__input"
+                        placeholder="Pesquisar" />
+                    </div>
+                </div>
+            <a href="main.html" class="header__brand" aria-label="Desapego de Roupas - Início"> 
+                <img src="../assets/icons/logo.png" alt="" class="header__brand-icon" aria-hidden="true"/>
+            </a>
+            <nav class="header__nav" aria-label="Navegação principal">
+                <a href="main.html" class="header__nav-link">Início</a>
+                <span class="header__nav-link header__nav-link--active">Catálogo</span>
+                <a href="cadastro-roupas.html" class="header__nav-link">Cadastrar roupa</a><span id="nav-username" class="header__nav-link header__nav-link--static" hidden></span>
+          <div id="user-menu" class="user-menu" hidden>
+            <button
+              id="nav-avatar"
+              type="button"
+              class="header__avatar"
+              aria-label="Menu do usuário"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <img id="nav-avatar-img" class="header__avatar-img" src="../assets/img/avatars/avatar-1.svg" alt="" />
+              <span id="nav-seller-badge" class="header__avatar-badge" aria-label="Vendedor" hidden>
+                <i class="fa-solid fa-store" aria-hidden="true"></i>
+              </span>
+            </button>
+            <div id="user-menu-panel" class="user-menu__panel" hidden>
+              <a href="profile.html" class="user-menu__item">Perfil</a>
+              <a id="nav-become-seller" href="seller-signup.html" class="user-menu__item" hidden>Começar a vender</a>
+              <button id="nav-logout" type="button" class="user-menu__item">Sair</button>
+            </div>
+          </div>
             </nav>
-        </header>                                                                       
-
+        </div>
+        </header>                                                                     
+        <div class="header-stripe" aria-hidden="true"></div>        
         <main class="page__main" role="main">
             <section class="section">
                 <div class="container">
 
                     <h2>Roupas disponíveis</h2>     
-                    <!-- Filtros -->
-                     <select id="filtro-categoria">
-                        <option value="">Todas as categorias</option>               
-                        <option value="Superior">Superior</option>
-                        <option value="Inferior">Inferior</option>
-                        <option value="Calçados">Calçados</option>
-                        <option value="Acessórios">Acessórios</option>
-                        </select> 
-                        <!-- Id para Botão de busca no JS-->
-                    <button type="button" id="btn-buscar" class="btn btn--primary">Buscar</button>
+                                             <!-- Filtros -->
+                     <nav class="grid grid--4" aria-label="Categorias de roupas">
+            <a href="#" class="category-card" data-category="superior">
+              <img src="../assets/icons/category-top.svg" class="category-card__icon" alt="" />
+              <span class="category-card__label">Superior</span>
+            </a>
+            <a href="#" class="category-card" data-category="inferior">
+              <img src="../assets/icons/category-bottom.svg" class="category-card__icon" alt="" />
+              <span class="category-card__label">Inferior</span>
+            </a>
+            <a href="#" class="category-card" data-category="calçados">
+              <img src="../assets/icons/category-shoes.svg" class="category-card__icon" alt="" />
+              <span class="category-card__label">Calçados</span>
+            </a>
+            <a href="#" class="category-card">
+              <img src="../assets/icons/category-accessories.svg" class="category-card__icon" alt="" />
+              <span class="category-card__label">Acessórios</span>
+            </a>
+          </nav> 
                     <hr />
-                    </div>
+                    <div id="lista-roupas"></div>
+                    <!-- fecha o container -->
+                    </div> 
+
       </section>
     </main>
 
@@ -62,5 +107,6 @@
 
   </div>
 
+  <script type="module" src="../assets/js/controllers/header.js"></script>
   <script type="module" src="../assets/js/controllers/catalogo.js"></script> 
 </body>           
