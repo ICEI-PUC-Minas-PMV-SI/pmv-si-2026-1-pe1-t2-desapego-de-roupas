@@ -135,6 +135,7 @@ Para cadastrar uma roupa, utilize a opção “Cadastrar roupa” disponível no
 
 ---
 
+
 ## Descrição das estruturas
 
 A persistência é feita via `localStorage`. Cada "tabela" corresponde a uma chave.
@@ -159,4 +160,5 @@ Objeto único (não array) com o mesmo formato do usuário. Representa quem est�
 |------------------------|------------------------------------------|
 | Usuário não logado     | `null` (chave não existe no localStorage) |
 | Usuário logado         | Objeto completo do usuário                |
+
 
