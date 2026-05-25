@@ -7,9 +7,10 @@ function renderizarCards(roupas) {
 
 roupas.forEach((roupa) => {
     const card = document.createElement("article");
+    card.className = "card";
 
     card.innerHTML = `
-    <img src="${roupa.imagens?.[0] ?? ''}" alt="${roupa.nome}" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px;" >
+    <img src="${roupa.imagens?.[0] ?? ''}" alt="${roupa.nome}" style="width: 100%; height: 150px; object-fit: contain; border-radius: 8px 8px 0 0;" >
     <h3>${roupa.nome}</h3>
     <p>${roupa.categoria} | ${roupa.tamanho} | ${roupa.cor}</p>
     <p>R$ ${roupa.preco}</p>
@@ -34,6 +35,6 @@ buscar(); // Renderiza as roupas quando carregar a página
 document.querySelectorAll(".category-card").forEach(card => {
     card.addEventListener("click", (e) => {
         e.preventDefault();
-        buscar(card.dataset.category);
+        buscar(card.dataset.categoria);
     });
 });
