@@ -5,6 +5,8 @@ const container = document.getElementById("lista-roupas");
 const searchInput = document.getElementById("site-search");
 const categoryCards = document.querySelectorAll(".category-card");
 const resultados = document.getElementById("catalog-results");
+const limparBtn = document.getElementById("limpar-filtros");
+const contador = document.getElementById("catalog-count");
 
 let categoriaSelecionada = "";
 let termoBusca = "";
@@ -54,7 +56,34 @@ function aplicarFiltros() {
         return correspondeCategoria && correspondeBusca;
     });
 
+    if (limparBtn) {
+        limparBtn.hidden = !categoriaSelecionada && !termoBusca;
+    }
+
+    if (contador) {
+        const n = resultado.length;
+        contador.textContent =
+            n === 0
+                ? "Nenhuma peça encontrada"
+                : `${n} ${n === 1 ? "peça" : "peças"}`;
+    }
+
     renderizarCards(resultado);
+}
+
+function limparFiltros() {
+    categoriaSelecionada = "";
+    termoBusca = "";
+
+    if (searchInput) {
+        searchInput.value = "";
+    }
+
+    categoryCards.forEach((c) =>
+        c.classList.remove("category-card--active")
+    );
+
+    aplicarFiltros();
 }
 
 if (get()) {
@@ -91,6 +120,10 @@ if (get()) {
             termoBusca = searchInput.value;
             aplicarFiltros();
         });
+    }
+
+    if (limparBtn) {
+        limparBtn.addEventListener("click", limparFiltros);
     }
 
     aplicarFiltros();

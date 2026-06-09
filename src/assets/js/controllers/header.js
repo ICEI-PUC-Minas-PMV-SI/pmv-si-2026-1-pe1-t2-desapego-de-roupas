@@ -1,59 +1,70 @@
 
 import * as session from "../repository/session.js";
 
+function show(id) {
+    const el = document.getElementById(id);
+    if (el) el.hidden = false;
+    return el;
+}
+
+function hide(id) {
+    const el = document.getElementById(id);
+    if (el) el.hidden = true;
+    return el;
+}
+
 
 const user = session.get();
 
 
 if (user) {
-    document.getElementById("nav-register").hidden = true;
-    document.getElementById("nav-login").hidden = true;
+    hide("nav-register");
+    hide("nav-login");
 
     const username = document.getElementById("nav-username");
-    username.textContent = user.nome;
-    username.hidden = false;
+    if (username) {
+        username.textContent = user.nome;
+        username.hidden = false;
+    }
 
     if (user.vendedor) {
+        show("nav-seller-badge");
+        show("nav-register-clothes");
+    } else {
+        show("nav-become-seller");
+    }
 
-    document.getElementById(
-        "nav-seller-badge"
-    ).hidden = false;
-
-    document.getElementById(
-        "nav-register-clothes"
-    ).hidden = false;
-
-} else {
-
-    document.getElementById(
-        "nav-become-seller"
-    ).hidden = false;
-}
-
-    const userMenu = document.getElementById("user-menu");
-    userMenu.hidden = false;
+    const userMenu = show("user-menu");
 
     const avatar = document.getElementById("nav-avatar");
     const panel = document.getElementById("user-menu-panel");
 
-    document.getElementById("nav-avatar-img").src =
-        "../assets/img/avatars/" + (user.avatar ?? "avatar-1.svg");
+    const avatarImg = document.getElementById("nav-avatar-img");
+    if (avatarImg) {
+        avatarImg.src =
+            "../assets/img/avatars/" + (user.avatar ?? "avatar-1.svg");
+    }
 
-    avatar.addEventListener("click", () => {
-        const willOpen = panel.hidden;
-        panel.hidden = !willOpen;
-        avatar.setAttribute("aria-expanded", String(willOpen));
-    });
+    if (avatar && panel) {
+        avatar.addEventListener("click", () => {
+            const willOpen = panel.hidden;
+            panel.hidden = !willOpen;
+            avatar.setAttribute("aria-expanded", String(willOpen));
+        });
 
-    document.addEventListener("click", (e) => {
-        if (!userMenu.contains(e.target)) {
-            panel.hidden = true;
-            avatar.setAttribute("aria-expanded", "false");
-        }
-    });
+        document.addEventListener("click", (e) => {
+            if (userMenu && !userMenu.contains(e.target)) {
+                panel.hidden = true;
+                avatar.setAttribute("aria-expanded", "false");
+            }
+        });
+    }
 
-    document.getElementById("nav-logout").addEventListener("click", () => {
-        session.clear();
-        window.location.reload();
-    });
+    const logout = document.getElementById("nav-logout");
+    if (logout) {
+        logout.addEventListener("click", () => {
+            session.clear();
+            window.location.reload();
+        });
+    }
 }

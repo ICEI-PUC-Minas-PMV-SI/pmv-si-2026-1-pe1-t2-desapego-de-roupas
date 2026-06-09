@@ -392,6 +392,38 @@
   gap: var(--space-2);
 }
 
+/* Cabecalho do catalogo (titulo + limpar filtros) */
+.catalog-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+  margin-top: var(--space-8);
+  margin-bottom: var(--space-5);
+  padding-bottom: var(--space-3);
+  border-bottom: var(--border-width) solid var(--color-border-soft);
+}
+
+.catalog-header__title {
+  margin: 0;
+}
+
+.catalog-header__subtitle {
+  margin: var(--space-1) 0 0;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+/* Cards do catalogo (lista de pecas) */
+#lista-roupas .card {
+  border: var(--border-width) solid var(--color-border-soft);
+}
+
+#lista-roupas .card h3 {
+  text-align: center;
+}
+
 .category-card__icon {
   width: 64px;
   height: 64px;

@@ -109,8 +109,15 @@
             </a>
           </nav>
           <div id="catalog-results" hidden>
-            <hr />
-            <h2>Roupas disponíveis</h2>
+            <div class="catalog-header">
+              <div>
+                <h2 class="catalog-header__title">Roupas disponíveis</h2>
+                <p class="catalog-header__subtitle" id="catalog-count"></p>
+              </div>
+              <button type="button" id="limpar-filtros" class="btn btn--secondary btn--sm" hidden>
+                Limpar filtros
+              </button>
+            </div>
             <div id="lista-roupas" class="grid grid--3"></div>
           </div>
 
