@@ -9,8 +9,15 @@ export function saveRoupa(roupa) {
 
     roupas.push(roupa);
 
-    localStorage.setItem(
-        STORAGE_KEY,
-        JSON.stringify(roupas)
-    );
+    try {
+        localStorage.setItem(
+            STORAGE_KEY,
+            JSON.stringify(roupas)
+        );
+    } catch (error) {
+        throw new Error(
+            "Não foi possível salvar: armazenamento cheio. " +
+            "Tente usar imagens menores ou remover algumas roupas."
+        );
+    }
 }

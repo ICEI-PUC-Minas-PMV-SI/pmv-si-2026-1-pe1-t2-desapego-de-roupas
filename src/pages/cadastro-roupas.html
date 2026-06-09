@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cadastrar roupa - Desapego de Roupas</title>
+    <title>Cadastrar peça - Desapego de Roupas</title>
 
     <link rel="icon" type="image/png" href="../assets/icons/logo.png" />
 
@@ -31,7 +31,7 @@
                     <div class="card">
 
                         <header class="card__header">
-                            <h1 class="card__title">Cadastrar roupa</h1>
+                            <h1 class="card__title">Cadastrar peça</h1>
                         </header>
 
                         <form class="form" id="clothes-form" novalidate>
@@ -64,9 +64,9 @@
 
                                 <option value="Inferior">Inferior</option>
                                 
-                                <option value="Calçados">Calçados</option>
+                                <option value="Calcados">Calçados</option>
 
-                                <option value="Acessórios">Acessórios</option>
+                                <option value="Acessorios">Acessórios</option>
                                 
                                 </select>
                             
@@ -77,14 +77,15 @@
                                     Tamanho
                                 </label>
 
-                                <input
-                                    type="text"
+                                <select
                                     id="tamanho"
                                     name="tamanho"
                                     class="form-control"
-                                    placeholder="Tamanho"
                                     required
-                                />
+                                    disabled
+                                >
+                                    <option value="">Selecione a categoria primeiro</option>
+                                </select>
                             </div>
 
                             <div class="form-group">
@@ -92,14 +93,27 @@
                                     Cor
                                 </label>
 
-                                <input
-                                    type="text"
+                                <select
                                     id="cor"
                                     name="cor"
                                     class="form-control"
-                                    placeholder="Cor"
                                     required
-                                />
+                                >
+                                    <option value="">Selecione uma cor</option>
+                                    <option value="Branco">Branco</option>
+                                    <option value="Preto">Preto</option>
+                                    <option value="Cinza">Cinza</option>
+                                    <option value="Vermelho">Vermelho</option>
+                                    <option value="Azul">Azul</option>
+                                    <option value="Verde">Verde</option>
+                                    <option value="Amarelo">Amarelo</option>
+                                    <option value="Laranja">Laranja</option>
+                                    <option value="Rosa">Rosa</option>
+                                    <option value="Roxo">Roxo</option>
+                                    <option value="Marrom">Marrom</option>
+                                    <option value="Bege">Bege</option>
+                                    <option value="Multicolorido">Multicolorido</option>
+                                </select>
                             </div>
 
                             <div class="form-group">
@@ -108,11 +122,12 @@
                                 </label>
 
                                 <input
-                                    type="number"
+                                    type="text"
                                     id="preco"
                                     name="preco"
                                     class="form-control"
-                                    placeholder="Preço"
+                                    placeholder="R$ 0,00"
+                                    inputmode="numeric"
                                     required
                                 />
                             </div>
@@ -194,7 +209,7 @@
                                 type="submit"
                                 class="btn btn--primary btn--block"
                             >
-                                Cadastrar roupa
+                                Cadastrar peça
                             </button>
 
                         </form>

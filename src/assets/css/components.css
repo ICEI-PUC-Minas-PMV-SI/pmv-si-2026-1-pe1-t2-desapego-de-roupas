@@ -380,6 +380,11 @@
   text-decoration: none;
 }
 
+.category-card--active {
+  background-color: var(--color-background-soft);
+  box-shadow: inset 0 -3px 0 0 var(--color-primary);
+}
+
 .category-card__icon {
   width: 64px;
   height: 64px;
