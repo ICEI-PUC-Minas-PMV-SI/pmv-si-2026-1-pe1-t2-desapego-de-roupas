@@ -57,7 +57,7 @@
           <a href="main.html" class="header__nav-link header__nav-link--active">Início</a>
           <a id="nav-register" href="signup.html" class="header__nav-link">Cadastrar</a>
           <a id="nav-login" href="login.html" class="header__nav-link">Entrar</a>
-          <a id="nav-register-clothes" href="cadastro-roupas.html" class="header__nav-link" hidden>Cadastrar roupa</a>
+          <a id="nav-register-clothes" href="cadastro-roupas.html" class="header__nav-link" hidden>Cadastrar peça</a>
           <span id="nav-username" class="header__nav-link header__nav-link--static" hidden></span>
           <div id="user-menu" class="user-menu" hidden>
             <button
@@ -91,23 +91,28 @@
           <h1 class="u-sr-only">Desapego de Roupas</h1>
 
           <nav class="grid grid--4" aria-label="Categorias de roupas">
-            <a href="catalogo.html" class="category-card">
+            <a href="#" class="category-card" data-categoria="Superior">
               <img src="../assets/icons/category-top.svg" class="category-card__icon" alt="" />
               <span class="category-card__label">Superior</span>
             </a>
-            <a href="catalogo.html" class="category-card">
+            <a href="#" class="category-card" data-categoria="Inferior">
               <img src="../assets/icons/category-bottom.svg" class="category-card__icon" alt="" />
               <span class="category-card__label">Inferior</span>
             </a>
-            <a href="catalogo.html" class="category-card">
+            <a href="#" class="category-card" data-categoria="Calcados">
               <img src="../assets/icons/category-shoes.svg" class="category-card__icon" alt="" />
               <span class="category-card__label">Calçados</span>
             </a>
-            <a href="catalogo.html" class="category-card">
+            <a href="#" class="category-card" data-categoria="Acessorios">
               <img src="../assets/icons/category-accessories.svg" class="category-card__icon" alt="" />
               <span class="category-card__label">Acessórios</span>
             </a>
           </nav>
+          <div id="catalog-results" hidden>
+            <hr />
+            <h2>Roupas disponíveis</h2>
+            <div id="lista-roupas" class="grid grid--3"></div>
+          </div>
 
           <div class="safety-notice">
             <i class="fa-solid fa-triangle-exclamation safety-notice__icon" aria-hidden="true"></i>
@@ -126,5 +131,6 @@
     </footer>
   </div>
   <script type="module" src="../assets/js/controllers/header.js"></script>
+  <script type="module" src="../assets/js/controllers/catalogo.js"></script>
 </body>
 </html>
