@@ -179,6 +179,8 @@ form.addEventListener("submit", async (event) => {
 
         imagePreview.innerHTML = "";
 
+        removeImageButton.hidden = true;
+
     } catch (error) {
 
         errorElement.textContent =
@@ -268,6 +270,8 @@ imageInput.addEventListener("change", () => {
         imageName.textContent =
             `${imagensSelecionadas.length} imagem(ns) selecionada(s)`;
 
+        removeImageButton.hidden = false;
+
         Array.from(imageInput.files).forEach((file) => {
 
             const reader = new FileReader();
@@ -287,10 +291,6 @@ imageInput.addEventListener("change", () => {
                 img.style.objectFit = "cover";
 
                 img.style.borderRadius = "8px";
-
-                img.style.marginTop = "10px";
-
-                img.style.marginRight = "10px";
 
                 imagePreview.appendChild(img);
             };
@@ -317,6 +317,8 @@ removeImageButton.addEventListener("click", () => {
         "Nenhum arquivo selecionado";
 
     imagePreview.innerHTML = "";
+
+    removeImageButton.hidden = true;
 });
 
 selectImagesButton.addEventListener("click", () => {
