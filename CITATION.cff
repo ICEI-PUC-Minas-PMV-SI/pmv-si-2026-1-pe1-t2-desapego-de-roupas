@@ -27,15 +27,10 @@ authors:
     family-names: Lemos Tavares
     given-names: Clóvis
     orcid: 'https://orcid.org/0000-0002-6193-3205'
-repository-code: >-
-  https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2026-1-pe1-t2-desapego-de-roupas
-abstract: >-
-  Descrever resumidamente, em um ou dois parágrafos, o
-  projeto que foi desenvolvido.
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2026-1-pe1-t2-desapego-de-roupas
 keywords:
+  - Desapego de roupas
+  - Roupas de segunda mão
+  - Brechó Online
   - Desenvolvimento Web
-  - HTML
-  - CSS
-  - JavaScript
-  - Template
-date-released: '2024-06-23'
+date-released: '2024-06-14'
