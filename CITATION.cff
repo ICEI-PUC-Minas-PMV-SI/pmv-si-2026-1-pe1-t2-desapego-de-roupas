@@ -1,9 +1,5 @@
 cff-version: 1.2.0
 title: Desapego de Roupas
-message: >-
-  Repositório padrão para o Eixo 1 - Projeto 1: Aplicações
-  Web da PUC Minas.
-type: software
 authors:
   - given-names: Amadeu
     family-names: Carlos Gonçalves Simões
