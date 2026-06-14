@@ -46,7 +46,7 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 |RF- 03| O sistema deve permitir ao usuário publicar uma roupa para desapego. | ALTA | 
 |RF- 04| O sistema deve permitir ao usuário realizar o cadastro de vendedor. | ALTA |
 |RF- 05| O sistema deve permitir ao usuário poder inserir informações adicionais (tamanho, cor, descrição). | ALTA |
-|RF- 06| O sistema deve possuir uma barra de busca. | ALTA |
+|RF- 06| O sistema deve possuir uma barra de busca que permita filtragem | ALTA |
 |RF- 07| O sistema deve permitir que o usuário possa entrar em contato com o vendedor (ex: WhatsApp). | ALTA |
 |RF- 08| O sistema deve permitir que o usuário exclua suas publicações. | ALTA |
 |RF- 09| O sistema deve permitir que o administrador possa remover conteúdos inadequados. | MÉDIA |
