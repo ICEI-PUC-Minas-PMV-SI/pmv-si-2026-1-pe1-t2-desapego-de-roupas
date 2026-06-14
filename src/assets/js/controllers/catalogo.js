@@ -1,5 +1,7 @@
 import { getRoupas } from "../repository/cadastro-roupas.js";
 import { get } from "../repository/session.js";
+import { createRoupaCard } from "../components/roupa-card.js";
+import { openRoupaModal } from "../components/roupa-modal.js";
 
 const container = document.getElementById("lista-roupas");
 const searchInput = document.getElementById("site-search");
@@ -20,21 +22,9 @@ function renderizarCards(roupas) {
     }
 
     roupas.forEach((roupa) => {
-        const card = document.createElement("article");
-        card.className = "card";
-
-        const precoFormatado = Number(roupa.preco).toLocaleString("pt-BR", {
-            style: "currency",
-            currency: "BRL"
-        });
-
-        card.innerHTML = `
-        <img src="${roupa.imagens?.[0] ?? ''}" alt="${roupa.nome}" style="width: 100%; height: 150px; object-fit: contain; border-radius: 8px 8px 0 0;" >
-        <h3>${roupa.nome}</h3>
-        <p>${roupa.categoria} | ${roupa.tamanho} | ${roupa.cor}</p>
-        <p>${precoFormatado}</p>
-        <p>${roupa.descricao}</p>
-        `;
+        const card = createRoupaCard(roupa, (selecionada) =>
+            openRoupaModal(selecionada, { onChange: aplicarFiltros })
+        );
 
         container.appendChild(card);
     });
