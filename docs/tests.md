@@ -25,17 +25,17 @@ Nesta seção o grupo deverá documentar os testes de software que verificam a c
 Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe qual o Requisito Funcional ou não funcional que ele está verificando. Associe também a página (ou artefato) onde o teste será realizado e descreva o cenário do teste. Veja a tabela de exemplo.
 
 
-**Caso de Teste** | **CT01 - Realizar cadastro **
+**Caso de Teste** | **CT01 - Realizar cadastro**
  :--------------: | ------------
-**Procedimento**  | 1) Acessar a tela inicial <br> 2) Clicar em "cadastrar" <br> 3) Preencher os campos do formulário <br> 4) Confirmar o cadastro.
+**Procedimento**  | 1) Acessar a tela de cadastro <br> 2) Preencher os campos do formulário <br> 3) Confirmar o cadastro.
 **Requisitos associados** | RF - 01
 **Resultado esperado** | Usuário cadastrado
-**Dados de entrada** | Inserção de dados válidos no formulário de cadastro
+**Dados de entrada** | Inserção de dados válidos
 **Resultado obtido** | Sucesso
 
 **Caso de Teste** | **CT02 - Fazer login e logout**
  :--------------: | ------------
-**Procedimento**  | 1) Clicar em "Entrar" <br> 2) Informar e-mail e senha <br> 3) Confirmar acesso <br> 4) Clique no ícone de perfil <br> 5) Clique em "sair" <br>
+**Procedimento**  | 1) Acessar a tela  de login <br> 2) Informar e-mail e senha <br> 3) Confirmar acesso <br> 4) Acessar o perfil <br> 5) Clicar em "sair" <br>
 **Requisitos associados** | RF - 02
 **Resultado esperado** | Usuário logado/deslogado
 **Dados de entrada** | Credenciais válidas
@@ -47,6 +47,14 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Requisitos associados** | RF - 03
 **Resultado esperado** | Roupa publicada
 **Dados de entrada** | Informações sobre a roupa
+**Resultado obtido** | Sucesso
+
+**Caso de Teste** | **CT04 - Cadastrar vendedor**
+ :--------------: | ------------
+**Procedimento**  | 1) Clicar no ícone do perfil <br> 2) Clicar em "começe a vender"  <br> 3) Preencher os campos do formuláio <br> 4) Salvar alterações <br>
+**Requisitos associados** | RF - 04
+**Resultado esperado** | Cadastro realizado
+**Dados de entrada** | Inserção de dados válidos
 **Resultado obtido** | Sucesso
 
 ## Registro dos Testes de Software
