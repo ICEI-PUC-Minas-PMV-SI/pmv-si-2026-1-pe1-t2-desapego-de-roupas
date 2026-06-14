@@ -44,12 +44,12 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 |RF- 01| O sistema deve permitir que o usuário faça o cadastro. | ALTA |  
 |RF- 02| O sistema deve permitir ao usuário conseguir fazer login o logout. | ALTA | 
 |RF- 03| O sistema deve permitir ao usuário publicar uma roupa para desapego. | ALTA | 
-|RF- 04| O sistema deve permitir ao usuário comprar uma peça. | ALTA |
+|RF- 04| O sistema deve permitir ao usuário realizar o cadastro de vendedor. | ALTA |
 |RF- 05| O sistema deve permitir ao usuário poder inserir informações adicionais (tamanho, cor, descrição). | ALTA |
-|RF- 06| O sistema deve possuir uma barra de busca. | ALTA |
+|RF- 06| O sistema deve possuir uma barra de busca que permita filtragem | ALTA |
 |RF- 07| O sistema deve permitir que o usuário possa entrar em contato com o vendedor (ex: WhatsApp). | ALTA |
-|RF- 08| O sistema deve permitir que o administrador possa remover conteúdos inadequados. | ALTA |
-|RF- 09| O sistema deve permitir que o usuário edite ou exclua suas publicações. | ALTA |
+|RF- 08| O sistema deve permitir que o usuário exclua suas publicações. | ALTA |
+|RF- 09| O sistema deve permitir que o administrador possa remover conteúdos inadequados. | MÉDIA |
 |RF- 10| O sistema deve permitir filtragem das peças. | MÉDIA |
 |RF- 11| O sistema deve permitir ao usuário favoritar peças. | MÉDIA |
 |RF- 12| O sistema deve permitir ao administrador gerenciar usuários. | MÉDIA |
