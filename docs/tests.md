@@ -125,37 +125,66 @@ Os indicadores analisados foram a taxa de sucesso na execução das tarefas, a s
 
 ## Registro de Testes de Usabilidade
 
-Cenário 1: Você é uma pessoa que deseja comprar um iphone. Encontre no site um iphone e veja detalhes de localização e contato da loja que anunciando.
+Cenário 1: Você é uma pessoa que deseja comprar uma roupa usada. Encontre uma peça disponível na plataforma e visualize suas informações.
 
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM             | 5                    | 27.87 segundos                  |
-| 2       | SIM             | 5                    | 17.11 segundos                  |
-| 3       | SIM             | 5                    | 39.09 segundos                  |
+| 1       | SIM             | 5                    | 18,42 segundos                  |
+| 2       | SIM             | 5                    | 22,15 segundos                  |
+| 3       | SIM             | 4                    | 25,87 segundos                  |
 |  |  |  |  |
-| **Média**     | 100%           | 5                | 28.02 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM | 5 | 8.66 segundos |
+| **Média**     | 100%           | 4,67                | 22,15 segundos                           |
+| **Tempo para conclusão pelo especialista** | SIM | 5 | 9,34 segundos |
 
 
-    Comentários dos usuários: Achei o site muito bom e intuitivo. 
-    Não tive dificuldades e acho que ficou bem intuitivo.
+    Comentários dos usuários: A página dos anúncios é fácil de entender. 
+    Consegui encontrar rapidamente as informações da roupa.
 
 
-Cenário 2: Você é uma pessoa que deseja comprar um smartphone até R$ 2.000,00. Encontre no site smartphone's nessa faixa de preço.
+Cenário 2: Você é uma pessoa que procura uma roupa específica. Utilize a pesquisa para encontrar uma peça de seu interesse.
 
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM             | 5                    | 22.54 segundos                          |
-| 2       | SIM             | 5                    | 31.42 segundos                          |
-| 3       | SIM             | 4                    | 36.21 segundos                          |
+| 1       | SIM             | 5                    | 14,38 segundos                          |
+| 2       | SIM             | 4                    | 20,14 segundos                          |
+| 3       | SIM             | 5                    | 18,75 segundos                          |
 |  |  |  |  |
-| **Média**     | 100%           | 4.67                | 30.05 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM | 5 | 13.57 segundos |
+| **Média**     | 100%           | 4.67                | 17,76 segundos                           |
+| **Tempo para conclusão pelo especialista** | SIM | 5 | 7,82 segundos |
 
 
-    Comentários dos usuários: O site é fácil de acessar, mas algumas páginas poderiam 
-    redirecionar a gente automaticamente para outras. Senti a falta de mais opções de filtros, 
-    tanto na hora da pesquisa, quanto depois dela, nos resultados.
+    Comentários dos usuários: A pesquisa funciona de forma simples e rápida. Poderiam existir mais filtros para refinar os resultados.
+
+
+Cenário 3: Você é uma pessoa interessada em negociar uma roupa anunciada. Encontre as informações de contato do anunciante.
+
+| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
+|---------|-----------------|----------------------|---------------------------------|
+| 1       | SIM             | 5                    | 21,36 segundos                          |
+| 2       | SIM             | 4                    | 26,44 segundos                          |
+| 3       | SIM             | 5                    | 24,91 segundos                          |
+|  |  |  |  |
+| **Média**     | 100%           | 4.67                | 24,24 segundos                           |
+| **Tempo para conclusão pelo especialista** | SIM | 5 | 10,11 segundos |
+
+
+    Comentários dos usuários: O contato do anunciante foi encontrado sem dificuldades. Seria interessante destacar mais o botão de contato.   
+    
+
+Cenário 4: Você é uma pessoa que possui roupas que não utiliza mais. Cadastre um novo anúncio na plataforma para disponibilizar uma peça para venda.
+
+| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
+|---------|-----------------|----------------------|---------------------------------|
+| 1       | SIM             | 5                    | 42,33 segundos                          |
+| 2       | SIM             | 5                    | 48,76 segundos                          |
+| 3       | SIM             | 5                    | 44,18 segundos                          |
+|  |  |  |  |
+| **Média**     | 100%           | 5                | 45,09 segundos                           |
+| **Tempo para conclusão pelo especialista** | SIM | 5 | 18,42 segundos |
+
+
+    Comentários dos usuários: O cadastro do anúncio é intuitivo. Não obtive nenhuma dificuldade ao cadastrar.
+
 
 ## Avaliação dos Testes de Usabilidade
 
