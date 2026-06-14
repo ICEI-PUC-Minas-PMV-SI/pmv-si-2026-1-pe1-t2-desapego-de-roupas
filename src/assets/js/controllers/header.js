@@ -30,6 +30,7 @@ if (user) {
     if (user.vendedor) {
         show("nav-seller-badge");
         show("nav-register-clothes");
+        show("nav-my-clothes");
     } else {
         show("nav-become-seller");
     }

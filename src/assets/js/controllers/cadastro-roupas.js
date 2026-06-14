@@ -1,6 +1,11 @@
 import {
-    cadastrarRoupa
+    cadastrarRoupa,
+    atualizarRoupa
 } from "../services/cadastro-roupas.js";
+
+import {
+    getRoupaById
+} from "../repository/cadastro-roupas.js";
 
 import {
     get
@@ -68,7 +73,19 @@ const precoInput = document.getElementById(
     "preco"
 );
 
+const titulo = document.getElementById(
+    "clothes-title"
+);
+
+const submitButton = document.getElementById(
+    "clothes-submit"
+);
+
 let imagensSelecionadas = [];
+let imagensExistentes = [];
+
+const params = new URLSearchParams(window.location.search);
+const editId = params.get("id");
 
 const TAMANHOS_POR_CATEGORIA = {
     superior: ["PP", "P", "M", "G", "GG", "XG"],
@@ -133,6 +150,97 @@ precoInput.addEventListener("input", () => {
     precoInput.value = formatarPreco(precoInput.value);
 });
 
+function adicionarPreview(src) {
+
+    const wrapper = document.createElement("div");
+
+    wrapper.className = "image-preview__item";
+
+    const img = document.createElement("img");
+
+    img.src = src;
+
+    img.style.width = "100px";
+
+    img.style.height = "100px";
+
+    img.style.objectFit = "cover";
+
+    img.style.borderRadius = "8px";
+
+    wrapper.appendChild(img);
+
+    imagePreview.appendChild(wrapper);
+}
+
+function atualizarStatusImagens() {
+
+    const total =
+        imagensExistentes.length + imagensSelecionadas.length;
+
+    if (total > 0) {
+
+        imageName.textContent =
+            `${total} imagem(ns) selecionada(s)`;
+
+        removeImageButton.hidden = false;
+
+    } else {
+
+        imageName.textContent =
+            "Nenhum arquivo selecionado";
+
+        removeImageButton.hidden = true;
+    }
+}
+
+// Modo edição: carrega a peça existente e preenche o formulário.
+if (editId && usuarioLogado && usuarioLogado.vendedor) {
+
+    const roupa = getRoupaById(editId);
+
+    if (!roupa) {
+
+        alert("Peça não encontrada.");
+
+        window.location.href = "minhas-pecas.html";
+
+    } else if (roupa.vendedorId !== usuarioLogado.id) {
+
+        alert("Você só pode editar peças que cadastrou.");
+
+        window.location.href = "minhas-pecas.html";
+
+    } else {
+
+        if (titulo) {
+            titulo.textContent = "Editar peça";
+        }
+
+        if (submitButton) {
+            submitButton.textContent = "Salvar alterações";
+        }
+
+        form.nome.value = roupa.nome;
+        categoriaSelect.value = roupa.categoria;
+        atualizarTamanhos();
+        tamanhoSelect.value = roupa.tamanho;
+        form.cor.value = roupa.cor;
+        form.descricao.value = roupa.descricao;
+
+        precoInput.value = Number(roupa.preco).toLocaleString("pt-BR", {
+            style: "currency",
+            currency: "BRL"
+        });
+
+        imagensExistentes = [...(roupa.imagens ?? [])];
+
+        imagensExistentes.forEach((src) => adicionarPreview(src));
+
+        atualizarStatusImagens();
+    }
+}
+
 form.addEventListener("submit", async (event) => {
 
     event.preventDefault();
@@ -141,13 +249,14 @@ form.addEventListener("submit", async (event) => {
 
     try {
 
-        const imagens = imagensSelecionadas;
-
-        const imagensBase64 = await Promise.all(
-            imagens.map((imagem) =>
-                converterImagem(imagem)
-            )
-        );
+        const imagensBase64 = [
+            ...imagensExistentes,
+            ...(await Promise.all(
+                imagensSelecionadas.map((imagem) =>
+                    converterImagem(imagem)
+                )
+            ))
+        ];
 
         const precoNumerico =
             Number(form.preco.value.replace(/\D/g, "")) / 100;
@@ -162,6 +271,19 @@ form.addEventListener("submit", async (event) => {
             imagens: imagensBase64
         };
 
+        if (editId) {
+
+            atualizarRoupa({ ...roupa, id: editId });
+
+            alert(
+                "Peça atualizada com sucesso!"
+            );
+
+            window.location.href = "minhas-pecas.html";
+
+            return;
+        }
+
         cadastrarRoupa(roupa);
 
         alert(
@@ -174,12 +296,9 @@ form.addEventListener("submit", async (event) => {
 
         imagensSelecionadas = [];
 
-        imageName.textContent =
-            "Nenhum arquivo selecionado";
-
         imagePreview.innerHTML = "";
 
-        removeImageButton.hidden = true;
+        atualizarStatusImagens();
 
     } catch (error) {
 
@@ -265,44 +384,18 @@ imageInput.addEventListener("change", () => {
         ...Array.from(imageInput.files)
     ];
 
-    if (imagensSelecionadas.length > 0) {
+    Array.from(imageInput.files).forEach((file) => {
 
-        imageName.textContent =
-            `${imagensSelecionadas.length} imagem(ns) selecionada(s)`;
+        const reader = new FileReader();
 
-        removeImageButton.hidden = false;
+        reader.onload = (event) => {
+            adicionarPreview(event.target.result);
+        };
 
-        Array.from(imageInput.files).forEach((file) => {
+        reader.readAsDataURL(file);
+    });
 
-            const reader = new FileReader();
-
-            reader.onload = (event) => {
-
-                const img = document.createElement(
-                    "img"
-                );
-
-                img.src = event.target.result;
-
-                img.style.width = "100px";
-
-                img.style.height = "100px";
-
-                img.style.objectFit = "cover";
-
-                img.style.borderRadius = "8px";
-
-                imagePreview.appendChild(img);
-            };
-
-            reader.readAsDataURL(file);
-        });
-
-    } else {
-
-        imageName.textContent =
-            "Nenhum arquivo selecionado";
-    }
+    atualizarStatusImagens();
 
     imageInput.value = "";
 });
@@ -311,14 +404,13 @@ removeImageButton.addEventListener("click", () => {
 
     imagensSelecionadas = [];
 
-    imageInput.value = "";
+    imagensExistentes = [];
 
-    imageName.textContent =
-        "Nenhum arquivo selecionado";
+    imageInput.value = "";
 
     imagePreview.innerHTML = "";
 
-    removeImageButton.hidden = true;
+    atualizarStatusImagens();
 });
 
 selectImagesButton.addEventListener("click", () => {
