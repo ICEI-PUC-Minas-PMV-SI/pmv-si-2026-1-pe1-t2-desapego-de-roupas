@@ -69,15 +69,20 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 Esta seção deve apresentar o relatório com as evidências dos testes de software realizados no sistema pela equipe, baseado no plano de testes pré-definido. Documente cada caso de teste apresentando um vídeo ou animação que comprove o funcionamento da funcionalidade. Veja os exemplos a seguir.
 
-|*Caso de Teste*                                 |*CT01 - Criar conta parte 1*                                         |
+|*Caso de Teste*                                 |*CT01 - Realizar cadastro*                                         |
 |---|---|
-|Requisito Associado | RF-001 - A aplicação deve permitir que os usuários criem uma conta e gerenciem seu cadastro|
-|Link do vídeo do teste realizado: | https://1drv.ms/u/s!AhD2JqpOUvJChapRtRSQ9vPzbNLwGA?e=mxZs6t| 
+|Requisito Associado | RF-01 - O sistema deve permitir que o usuário faça o cadastro.|
+|Link do vídeo do teste realizado: | https://1drv.ms/v/c/c6925907656eb377/IQD0oFmMev6aSIdGsgPczHvVATRKkiHmSh04u8cJK0QnH3E?e=AqIrbi | 
 
-|*Caso de Teste*                                 |*CT02 - Criar conta parte 2*                                        |
+|*Caso de Teste*                                 |*CT02 - Login e logout*                                        |
 |---|---|
-|Requisito Associado | RF-001 - A aplicação deve permitir que os usuários criem uma conta e gerenciem seu cadastro|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+|Requisito Associado | RF-02 - O sistema deve permitir ao usuário conseguir fazer login e logout.|
+|Link do vídeo do teste realizado: | https://1drv.ms/v/c/c6925907656eb377/IQDp2HHO119nRrRjfN6pdGMyAdOHrrIy4AwjF5ATrQhPP4s?e=qdEpWi | 
+
+|*Caso de Teste*                                 |*CT03 - Publicar uma roupa*                                         |
+|---|---|
+|Requisito Associado | RF-03 - O sistema deve permitir ao usuário publicar uma roupa para desapego.|
+|Link do vídeo do teste realizado: | https://1drv.ms/v/c/c6925907656eb377/IQCEQV2UJQxkSrk4xPdqa-7fAWNlvpvgmmmchC8tD8nR86Y?e=fn0wac | 
 
 
 ## Avaliação dos Testes de Software
