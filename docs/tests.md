@@ -57,9 +57,9 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | Inserção de dados válidos.
 **Resultado obtido** | Sucesso
 
-**Caso de Teste** | **CT05 - Inserir informações sobre a roupa**
+**Caso de Teste** | **CT05 - Inserir informações adicionais**
  :--------------: | ------------
-**Procedimento**  | 1) Clicar no ícone do perfil <br> 2) Clicar em "minhas peças" <br> 3) Selecionar a roupa desejada <br> 4) Selecionar editar <br> 5) Preencher os campos do formulário <br> 6) Salvar alterações <br>
+**Procedimento**  | 1) Clicar no ícone do perfil. <br> 2) Clicar em "minhas peças". <br> 3) Selecionar a roupa desejada. <br> 4) Selecionar editar. <br> 5) Preencher os campos do formulário. <br> 6) Salvar alterações. <br>
 **Requisitos associados** | RF - 05
 **Resultado esperado** | Informações adicionadas.
 **Dados de entrada** | Informações adicionais sobre a roupa.
@@ -67,7 +67,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 **Caso de Teste** | **CT06 - Pesuisar com barra de busca**
  :--------------: | ------------
-**Procedimento**  | 1) Acessar a tela inicial <br> 2) Filtrar pela barra de busca <br>
+**Procedimento**  | 1) Acessar a tela inicial. <br> 2) Filtrar pela barra de busca. <br>
 **Requisitos associados** | RF - 06
 **Resultado esperado** | Roupas exibidas.
 **Dados de entrada** | Informações sobre a roupa.
@@ -75,7 +75,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 **Caso de Teste** | **CT07 - Contatar o vendedor**
  :--------------: | ------------
-**Procedimento**  | 1) Acessar a roupa desejada <br> 2) Clicar em "tenho interesse" <br>
+**Procedimento**  | 1) Acessar a roupa desejada. <br> 2) Clicar em "tenho interesse". <br>
 **Requisitos associados** | RF - 07
 **Resultado esperado** | Contato realizado.
 **Dados de entrada** | Botão tenho interesse.
@@ -83,7 +83,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 **Caso de Teste** | **CT08 - Excluir publicações**
  :--------------: | ------------
-**Procedimento**  | 1) Clicar no ícone do perfil <br> 2) Clicar em "minhas peças" <br> 3) Selecionar a peça desejada <br> 4) Excluir publicação <br>
+**Procedimento**  | 1) Clicar no ícone do perfil. <br> 2) Clicar em "minhas peças". <br> 3) Selecionar a peça desejada. <br> 4) Excluir publicação. <br>
 **Requisitos associados** | RF - 08
 **Resultado esperado** | Publicação excluída.
 **Dados de entrada** | Botão excluir.
@@ -97,17 +97,44 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 |*Caso de Teste*                                 |*CT01 - Realizar cadastro*                                         |
 |---|---|
 |Requisito Associado | RF-01 - O sistema deve permitir que o usuário faça o cadastro.|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/c/c6925907656eb377/IQD0oFmMev6aSIdGsgPczHvVATRKkiHmSh04u8cJK0QnH3E?e=AqIrbi | 
+|Link do vídeo do teste realizado: | https://1drv.ms/v/c/c6925907656eb377/IQAod4a0n8g6Q7mrEZ3tuJPAAcgYdcVy_YC2LNj-VsuWxos?e=vsWvn3 | 
 
 |*Caso de Teste*                                 |*CT02 - Login e logout*                                        |
 |---|---|
 |Requisito Associado | RF-02 - O sistema deve permitir ao usuário conseguir fazer login e logout.|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/c/c6925907656eb377/IQDp2HHO119nRrRjfN6pdGMyAdOHrrIy4AwjF5ATrQhPP4s?e=qdEpWi | 
+|Link do vídeo do teste realizado: | https://1drv.ms/v/c/c6925907656eb377/IQCNY8j8wNu3RaMDA8eGV2B-AXDGIhcdg9Sw1upDOHk7ofM?e=bTCRFb | 
 
 |*Caso de Teste*                                 |*CT03 - Publicar uma roupa*                                         |
 |---|---|
 |Requisito Associado | RF-03 - O sistema deve permitir ao usuário publicar uma roupa para desapego.|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/c/c6925907656eb377/IQCEQV2UJQxkSrk4xPdqa-7fAWNlvpvgmmmchC8tD8nR86Y?e=fn0wac | 
+|Link do vídeo do teste realizado: | https://1drv.ms/v/c/c6925907656eb377/IQAvbMBO8jD-SaOBYH9qS3fEAU7lLnt20dBV4ud5TqKXcV8?e=2ifPr9 | 
+
+|*Caso de Teste*                                 |*CT04 - Cadastrar vendedor*                                         |
+|---|---|
+|Requisito Associado | RF-04 - O sistema deve permitir ao usuário realizar o cadastro de vendedor.|
+|Link do vídeo do teste realizado: | https://1drv.ms/v/c/c6925907656eb377/IQCiFqZ64UbTQJAbHl6XZCE8ASol2BkLgPnLl2Gr2yw0JYs?e=bcRMBn |
+
+|*Caso de Teste*                                 |*CT05 - Inserir informações adicionais*                                         |
+|---|---|
+|Requisito Associado | RF-05 - O sistema deve permitir ao usuário poder inserir informações adicionais (tamanho, cor, descrição).|
+|Link do vídeo do teste realizado: | https://1drv.ms/v/c/c6925907656eb377/IQAnGTphvIXDSY3N1vWDihvWAVi2wNy_QFhMmUbeY6Bar58?e=kpJASk |
+
+|*Caso de Teste*                                 |*CT06 - Realizar pesquisa por barra de busca*                                         |
+|---|---|
+|Requisito Associado | RF-06 - O sistema deve possuir uma barra de busca que permita pesquisa.|
+|Link do vídeo do teste realizado: | https://1drv.ms/v/c/c6925907656eb377/IQACfpZKc5baToTdmZuKihc4AY25iiV38SAUxj0PuW8td64?e=KtedDN |
+
+|*Caso de Teste*                                 |*CT07 - Entrar em contato com o vendedor*                                         |
+|---|---|
+|Requisito Associado | RF-07 - O sistema deve permitir que o usuário possa entrar em contato com o vendedor (ex: WhatsApp).|
+|Link do vídeo do teste realizado: | https://1drv.ms/v/c/c6925907656eb377/IQDq67W2xDeeRLd0qVHPmJWwAXCJA48ZlaO_vT45b4_LsAs |
+
+|*Caso de Teste*                                 |*CT08 - Excluir publicações*                                         |
+|---|---|
+|Requisito Associado | RF-08 - O sistema deve permitir que o usuário exclua suas publicações.|
+|Link do vídeo do teste realizado: | https://1drv.ms/v/c/c6925907656eb377/IQDR5djRT1UjTpyvvlUR2tYGAd_jKM69cK_EKVjMwUYsOuA?e=YdYnuz |
+
+
 
 
 ## Avaliação dos Testes de Software
