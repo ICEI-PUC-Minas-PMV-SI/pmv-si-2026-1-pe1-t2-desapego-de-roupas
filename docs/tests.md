@@ -57,7 +57,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | Inserção de dados válidos.
 **Resultado obtido** | Sucesso
 
-**Caso de Teste** | **CT05 - Cadastrar vendedor**
+**Caso de Teste** | **CT05 - Inserir informações sobre a roupa**
  :--------------: | ------------
 **Procedimento**  | 1) Acessar cadastro de roupas <br> 2) Preencher os campos do formulário <br> 3) Salvar alterações <br>
 **Requisitos associados** | RF - 05
