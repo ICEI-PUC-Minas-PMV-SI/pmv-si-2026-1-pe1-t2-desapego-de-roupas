@@ -90,29 +90,21 @@ Se o grupo tiver interesse em se aprofundar no desenvolvimento de testes de soft
 
 # Testes de Usabilidade
 
-O objetivo do Plano de Testes de Usabilidade é obter informações quanto à expectativa dos usuários em relação à  funcionalidade da aplicação de forma geral.
+Os testes de usabilidade foram realizados com o objetivo de avaliar a facilidade de utilização da plataforma Desapego de Roupas, verificando se os usuários conseguem executar as principais funcionalidades propostas pelo sistema de forma intuitiva e eficiente.
 
-Para tanto, elaboramos quatro cenários, cada um baseado na definição apresentada sobre as histórias dos usuários, definido na etapa das especificações do projeto.
+Participaram dos testes quatro usuários com perfis compatíveis com o público-alvo definido no projeto, incluindo pessoas interessadas em comprar roupas usadas, desapegar de peças que não utilizam mais e usuários familiarizados com compras e vendas em plataformas digitais. 
 
-Foram convidadas quatro pessoas que os perfis se encaixassem nas definições das histórias apresentadas na documentação, visando averiguar os seguintes indicadores:
+As funcionalidades avaliadas foram selecionadas com base nas principais histórias de usuário e objetivos da aplicação, abrangendo a busca de roupas disponíveis, a visualização dos detalhes de anúncios, o contato com anunciantes e a publicação de novos anúncios na plataforma.
 
-Taxa de sucesso: responde se o usuário conseguiu ou não executar a tarefa proposta;
+Para a execução dos testes foram utilizadas as seguintes técnicas e ferramentas de UX:
 
-Satisfação subjetiva: responde como o usuário avalia o sistema com relação à execução da tarefa proposta, conforme a seguinte escala:
+Observação direta dos participantes durante a realização das tarefas propostas;
+Cronômetro digital para medição do tempo necessário para concluir cada cenário;
+Registro manual dos resultados em planilha eletrônica;
+Escala de satisfação subjetiva composta por cinco níveis: Péssimo, Ruim, Regular, Bom e Ótimo;
+Comparação do tempo de execução dos usuários com o tempo obtido por um especialista (desenvolvedor da aplicação).
 
-1. Péssimo; 
-2. Ruim; 
-3. Regular; 
-4. Bom; 
-5. Ótimo.
-
-Tempo para conclusão da tarefa: em segundos, e em comparação com o tempo utilizado quando um especialista (um desenvolvedor) realiza a mesma tarefa.
-
-Objetivando respeitar as diretrizes da Lei Geral de Proteção de Dados, as informações pessoais dos usuários que participaram do teste não foram coletadas, tendo em vista a ausência de Termo de Consentimento Livre e Esclarecido.
-
-Apresente os cenários de testes utilizados na realização dos testes de usabilidade da sua aplicação. Escolha cenários de testes que demonstrem as principais histórias de usuário sendo realizadas. Neste tópico o grupo deve detalhar quais funcionalidades avaliadas, o grupo de usuários que foi escolhido para participar do teste e as ferramentas utilizadas.
-
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
+Os indicadores analisados foram a taxa de sucesso na execução das tarefas, a satisfação subjetiva dos participantes e o tempo necessário para a conclusão de cada cenário
 
 
 ## Cenários de Teste de Usabilidade
