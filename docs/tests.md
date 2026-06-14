@@ -25,20 +25,28 @@ Nesta seção o grupo deverá documentar os testes de software que verificam a c
 Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe qual o Requisito Funcional ou não funcional que ele está verificando. Associe também a página (ou artefato) onde o teste será realizado e descreva o cenário do teste. Veja a tabela de exemplo.
 
 
-**Caso de Teste** | **CT01 - Realizar cadastro 1**
+**Caso de Teste** | **CT01 - Realizar cadastro **
  :--------------: | ------------
-**Procedimento**  | 1) Acessar a tela inicial <br> 2) Clique em cadastrar <br> 2) Preencha os campos do formulário <br> 3) Clique no botão "Cadastrar".
-**Requisitos associados** | RF-001
+**Procedimento**  | 1) Acessar a tela inicial <br> 2) Clicar em "cadastrar" <br> 3) Preencher os campos do formulário <br> 4) Confirmar o cadastro.
+**Requisitos associados** | RF - 01
 **Resultado esperado** | Usuário cadastrado
 **Dados de entrada** | Inserção de dados válidos no formulário de cadastro
 **Resultado obtido** | Sucesso
 
-**Caso de Teste** | **CT02 - Criar conta parte 2**
+**Caso de Teste** | **CT02 - Fazer login e logout**
  :--------------: | ------------
-**Procedimento**  | 1) Preencha todos os campos do formulário <br> 2) Clique no botão "Criar conta" <br> 
-**Requisitos associados** | RF-001
-**Resultado esperado** | Usuário cadastrado
-**Dados de entrada** | Inserção de dados válidos no formulário de cadastro
+**Procedimento**  | 1) Clicar em "Entrar" <br> 2) Informar e-mail e senha <br> 3) Confirmar acesso <br> 4) Clique no ícone de perfil <br> 5) Clique em "sair" <br>
+**Requisitos associados** | RF - 02
+**Resultado esperado** | Usuário logado/deslogado
+**Dados de entrada** | Credenciais válidas
+**Resultado obtido** | Sucesso
+
+**Caso de Teste** | **CT03 - Publicar uma roupa**
+ :--------------: | ------------
+**Procedimento**  | 1) Acessar cadastro de roupas <br> 2) Preencher os campos do formulário <br> 3) Confirmar o cadastro <br>
+**Requisitos associados** | RF - 03
+**Resultado esperado** | Roupa publicada
+**Dados de entrada** | Informações sobre a roupa
 **Resultado obtido** | Sucesso
 
 ## Registro dos Testes de Software
