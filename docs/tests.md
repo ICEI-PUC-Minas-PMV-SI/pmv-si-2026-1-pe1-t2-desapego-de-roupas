@@ -87,11 +87,19 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 
 ## Avaliação dos Testes de Software
 
-Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identificados na solução. Comente como o grupo pretende atacar esses pontos nas próximas iterações. Apresente as falhas detectadas e as melhorias geradas a partir dos resultados obtidos nos testes.
+Os testes realizados permitiram verificar o funcionamento das principais funcionalidades da plataforma Desapego de Roupas. De modo geral, os resultados foram satisfatórios, uma vez que todas as funcionalidades avaliadas apresentaram comportamento adequado e atenderam aos requisitos definidos para o projeto.
+
+Entre os pontos fortes identificados, destacam-se a facilidade de navegação, a simplicidade do processo de cadastro de anúncios, a eficiência da pesquisa de roupas e a visualização das informações dos produtos anunciados. Os usuários conseguiram realizar as tarefas propostas sem dificuldades significativas, demonstrando que a interface é intuitiva e adequada ao público-alvo.
+
+Como pontos de melhoria, foram identificadas oportunidades relacionadas à experiência do usuário, como a inclusão de filtros mais avançados na pesquisa, melhorias visuais em alguns formulários e maior destaque para informações importantes, como dados de contato dos anunciantes. Além disso, observou-se que algumas tarefas demandaram mais tempo dos usuários quando comparadas ao tempo do especialista, indicando possibilidades de otimização da navegação.
+
+Para as próximas iterações do projeto, o grupo pretende implementar melhorias na interface, adicionar novos filtros de busca, aprimorar a validação dos formulários e realizar novos ciclos de testes com usuários, buscando aumentar ainda mais a eficiência e a satisfação na utilização da plataforma.
 
 ## Testes de unidade automatizados (Opcional)
 
-Se o grupo tiver interesse em se aprofundar no desenvolvimento de testes de software, ele podera desenvolver testes automatizados de software que verificam o funcionamento das funções JavaScript desenvolvidas. Para conhecer sobre testes unitários em JavaScript, leia 0 documento  [Ferramentas de Teste para Java Script](https://geekflare.com/javascript-unit-testing/).
+Devido ao escopo acadêmico do projeto e ao tempo disponível para desenvolvimento, não foram implementados testes de unidade automatizados. A validação das funcionalidades foi realizada por meio de testes manuais, contemplando os principais fluxos de uso da aplicação, como cadastro de anúncios, pesquisa de roupas, visualização de detalhes e acesso às informações de contato dos anunciantes.
+
+Como trabalho futuro, o grupo considera a implementação de testes automatizados, permitindo verificar automaticamente o funcionamento das funções JavaScript responsáveis pelo gerenciamento dos anúncios, armazenamento de dados e mecanismos de pesquisa. A adoção de testes automatizados contribuirá para aumentar a confiabilidade da aplicação e facilitar a manutenção do código em versões futuras.
 
 # Testes de Usabilidade
 
