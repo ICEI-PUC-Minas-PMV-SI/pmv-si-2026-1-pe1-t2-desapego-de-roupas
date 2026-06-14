@@ -51,10 +51,18 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 **Caso de Teste** | **CT04 - Cadastrar vendedor**
  :--------------: | ------------
-**Procedimento**  | 1) Clicar no ícone do perfil. <br> 2) Selecionar "começar a vender".  <br> 3) Preencher os campos do formuláio. <br> 4) Salvar alterações. <br>
+**Procedimento**  | 1) Clicar no ícone do perfil. <br> 2) Selecionar "começar a vender".  <br> 3) Preencher os campos do formulário. <br> 4) Salvar alterações. <br>
 **Requisitos associados** | RF - 04
 **Resultado esperado** | Cadastro realizado.
 **Dados de entrada** | Inserção de dados válidos.
+**Resultado obtido** | Sucesso
+
+**Caso de Teste** | **CT05 - Cadastrar vendedor**
+ :--------------: | ------------
+**Procedimento**  | 1) Acessar cadastro de roupas <br> 2) Preencher os campos do formulário <br> 3) Salvar alterações <br>
+**Requisitos associados** | RF - 05
+**Resultado esperado** | Informações adicionadas
+**Dados de entrada** | Informações adicionais sobre a roupa
 **Resultado obtido** | Sucesso
 
 ## Registro dos Testes de Software
