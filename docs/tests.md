@@ -35,7 +35,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 **Caso de Teste** | **CT02 - Fazer login e logout**
  :--------------: | ------------
-**Procedimento**  | 1) Acessar a tela  de login. <br> 2) Informar e-mail e senha. <br> 3) Confirmar acesso. <br> 4) Acessar o perfil. <br> 5) Clicar em "sair". <br>
+**Procedimento**  | 1) Acessar a tela de login. <br> 2) Informar e-mail e senha. <br> 3) Confirmar acesso. <br> 4) Acessar o perfil. <br> 5) Clicar em "sair". <br>
 **Requisitos associados** | RF - 02
 **Resultado esperado** | Usuário logado/deslogado.
 **Dados de entrada** | Credenciais válidas.
@@ -59,11 +59,36 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 **Caso de Teste** | **CT05 - Inserir informações sobre a roupa**
  :--------------: | ------------
-**Procedimento**  | 1) Acessar cadastro de roupas <br> 2) Preencher os campos do formulário <br> 3) Salvar alterações <br>
+**Procedimento**  | 1) Clicar no ícone do perfil <br> 2) Clicar em "minhas peças" <br> 3) Selecionar a roupa desejada <br> 4) Selecionar editar <br> 5) Preencher os campos do formulário <br> 6) Salvar alterações <br>
 **Requisitos associados** | RF - 05
-**Resultado esperado** | Informações adicionadas
-**Dados de entrada** | Informações adicionais sobre a roupa
+**Resultado esperado** | Informações adicionadas.
+**Dados de entrada** | Informações adicionais sobre a roupa.
 **Resultado obtido** | Sucesso
+
+**Caso de Teste** | **CT06 - Pesuisar com barra de busca**
+ :--------------: | ------------
+**Procedimento**  | 1) Acessar a tela inicial <br> 2) Filtrar pela barra de busca <br>
+**Requisitos associados** | RF - 06
+**Resultado esperado** | Roupas exibidas.
+**Dados de entrada** | Informações sobre a roupa.
+**Resultado obtido** | Sucesso
+
+**Caso de Teste** | **CT07 - Contatar o vendedor**
+ :--------------: | ------------
+**Procedimento**  | 1) Acessar a roupa desejada <br> 2) Clicar em "tenho interesse" <br>
+**Requisitos associados** | RF - 07
+**Resultado esperado** | Contato realizado.
+**Dados de entrada** | Botão tenho interesse.
+**Resultado obtido** | Sucesso
+
+**Caso de Teste** | **CT08 - Excluir publicações**
+ :--------------: | ------------
+**Procedimento**  | 1) Clicar no ícone do perfil <br> 2) Clicar em "minhas peças" <br> 3) Selecionar a peça desejada <br> 4) Excluir publicação <br>
+**Requisitos associados** | RF - 08
+**Resultado esperado** | Publicação excluída.
+**Dados de entrada** | Botão excluir.
+**Resultado obtido** | Sucesso
+
 
 ## Registro dos Testes de Software
 
