@@ -18,6 +18,10 @@ export function findByEmail (email) {
     return getAll().find(u => u.email === email)
 }
 
+export function findById (id) {
+    return getAll().find(u => u.id === id)
+}
+
 export function save (user) {
     const users = getAll();
     const withId = { ...user, id: generateUUID() };
