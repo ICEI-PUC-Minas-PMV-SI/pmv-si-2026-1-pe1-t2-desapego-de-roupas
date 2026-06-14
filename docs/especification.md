@@ -48,8 +48,8 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 |RF- 05| O sistema deve permitir ao usuário poder inserir informações adicionais (tamanho, cor, descrição). | ALTA |
 |RF- 06| O sistema deve possuir uma barra de busca. | ALTA |
 |RF- 07| O sistema deve permitir que o usuário possa entrar em contato com o vendedor (ex: WhatsApp). | ALTA |
-|RF- 08| O sistema deve permitir que o administrador possa remover conteúdos inadequados. | ALTA |
-|RF- 09| O sistema deve permitir que o usuário edite ou exclua suas publicações. | ALTA |
+|RF- 08| O sistema deve permitir que o usuário exclua suas publicações. | ALTA |
+|RF- 09| O sistema deve permitir que o administrador possa remover conteúdos inadequados. | MÉDIA |
 |RF- 10| O sistema deve permitir filtragem das peças. | MÉDIA |
 |RF- 11| O sistema deve permitir ao usuário favoritar peças. | MÉDIA |
 |RF- 12| O sistema deve permitir ao administrador gerenciar usuários. | MÉDIA |
