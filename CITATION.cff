@@ -11,15 +11,12 @@ authors:
     family-names: Alves Setragni
   - given-names: Matheus 
     family-names: Eduardo Andrade Vieira
-  - given-names: João Lucca
-    family-names: Alves Setragni
   - given-names: Rafael
     family-names: Lorenzo Machado Miranda
   - name-suffix: Professor
     affiliation: PUC Minas
     family-names: Lemos Tavares
     given-names: Clóvis
-    orcid: 'https://orcid.org/0000-0002-6193-3205'
 repository-code: https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2026-1-pe1-t2-desapego-de-roupas
 keywords:
   - Desapego de roupas
