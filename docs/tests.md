@@ -188,13 +188,15 @@ Cenário 4: Você é uma pessoa que possui roupas que não utiliza mais. Cadastr
 
 ## Avaliação dos Testes de Usabilidade
 
-Tomando como base os resultados obtidos, foi possível verificar que a aplicação web apresenta bons resultados quanto à taxa de sucesso na interação dos usuários, tendo em vista que os cenários propostos foram concluídos com sucesso.
+Com base nos resultados obtidos, verificou-se que a plataforma Desapego de Roupas apresentou desempenho satisfatório em todos os cenários avaliados. A taxa de sucesso foi de 100%, demonstrando que os participantes conseguiram concluir as tarefas propostas sem impedimentos.
 
-Além disso, a aplicação obteve também uma elevada satisfação subjetiva dos usuários no momento que realizavam os cenários propostos. Prova são as médias das avaliações em cada um dos cenários, que variou entre 4 (bom) e 5 (ótimo).
+A satisfação subjetiva também apresentou resultados positivos, com médias variando entre 4,67 e 5, indicando que os usuários consideraram a navegação simples, intuitiva e adequada aos objetivos da aplicação.
 
-Com relação ao tempo para conclusão de cada tarefa/cenário, notamos discrepância entre a média de tempo dos usuários e o tempo do especialista/desenvolvedor em todos os cenários. Tal discrepância, em certa medida, é esperada, tendo em vista que o desenvolvedor já tem prévio conhecimento de toda a interface da aplicação, do posicionamento dos elementos, lógica de organização das páginas, etc.
+Em relação ao tempo de execução, observou-se que os participantes levaram mais tempo para concluir as tarefas quando comparados ao especialista. Essa diferença é considerada normal, pois o desenvolvedor possui conhecimento prévio da estrutura da aplicação e da localização dos recursos disponíveis.
 
-Contudo, tendo em vista que a diferença foi relevante (por exemplo, 113 segundos — média usuários — contra 25 segundos — especialista — no cenário três), e ainda os comentários feitos por alguns usuários, entendemos haver oportunidades de melhoria na usabilidade da aplicação.
+Os comentários coletados durante os testes apontaram alguns aspectos que podem ser aprimorados, como a inclusão de filtros mais avançados na busca, maior destaque para as informações de contato dos anunciantes e melhorias visuais no formulário de cadastro de anúncios.
+
+De forma geral, os resultados indicam que a plataforma atende aos requisitos básicos de usabilidade, permitindo que os usuários realizem as principais tarefas de compra e venda de roupas usadas de maneira eficiente e satisfatória.
 
 
 
