@@ -116,8 +116,10 @@ Os indicadores analisados foram a taxa de sucesso na execução das tarefas, a s
 
 | Nº do Cenário | Descrição do cenário |
 |---------------|----------------------|
-| 1             | Você é uma pessoa que deseja comprar um iphone. Encontre no site um iphone e veja detalhes de localização e contato da loja que anunciando. |
-| 2             | Você é uma pessoa que deseja comprar um smartphone até R$ 2.000,00. Encontre no site smartphone's nessa faixa de preço. |
+| 1             | Você é uma pessoa que deseja comprar uma roupa usada. Encontre uma peça disponível na plataforma e visualize suas informações. |
+| 2             | Você é uma pessoa que procura uma roupa específica. Utilize a pesquisa para encontrar uma peça de seu interesse. |
+| 3             | Você é uma pessoa interessada em negociar uma roupa anunciada. Encontre as informações de contato do anunciante. |
+| 4             | Você é uma pessoa que possui roupas que não utiliza mais. Cadastre um novo anúncio na plataforma para disponibilizar uma peça para venda. |
 
 
 
