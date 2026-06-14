@@ -27,34 +27,34 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 **Caso de Teste** | **CT01 - Realizar cadastro**
  :--------------: | ------------
-**Procedimento**  | 1) Acessar a tela de cadastro <br> 2) Preencher os campos do formulário <br> 3) Confirmar o cadastro.
+**Procedimento**  | 1) Acessar a tela de cadastro. <br> 2) Preencher os campos do formulário. <br> 3) Confirmar o cadastro.
 **Requisitos associados** | RF - 01
-**Resultado esperado** | Usuário cadastrado
-**Dados de entrada** | Inserção de dados válidos
+**Resultado esperado** | Usuário cadastrado.
+**Dados de entrada** | Inserção de dados válidos.
 **Resultado obtido** | Sucesso
 
 **Caso de Teste** | **CT02 - Fazer login e logout**
  :--------------: | ------------
-**Procedimento**  | 1) Acessar a tela  de login <br> 2) Informar e-mail e senha <br> 3) Confirmar acesso <br> 4) Acessar o perfil <br> 5) Clicar em "sair" <br>
+**Procedimento**  | 1) Acessar a tela  de login. <br> 2) Informar e-mail e senha. <br> 3) Confirmar acesso. <br> 4) Acessar o perfil. <br> 5) Clicar em "sair". <br>
 **Requisitos associados** | RF - 02
-**Resultado esperado** | Usuário logado/deslogado
-**Dados de entrada** | Credenciais válidas
+**Resultado esperado** | Usuário logado/deslogado.
+**Dados de entrada** | Credenciais válidas.
 **Resultado obtido** | Sucesso
 
 **Caso de Teste** | **CT03 - Publicar uma roupa**
  :--------------: | ------------
-**Procedimento**  | 1) Acessar cadastro de roupas <br> 2) Preencher os campos do formulário <br> 3) Confirmar o cadastro <br>
+**Procedimento**  | 1) Acessar cadastro de roupas. <br> 2) Preencher os campos do formulário. <br> 3) Confirmar o cadastro. <br>
 **Requisitos associados** | RF - 03
-**Resultado esperado** | Roupa publicada
-**Dados de entrada** | Informações sobre a roupa
+**Resultado esperado** | Roupa publicada.
+**Dados de entrada** | Informações sobre a roupa.
 **Resultado obtido** | Sucesso
 
 **Caso de Teste** | **CT04 - Cadastrar vendedor**
  :--------------: | ------------
-**Procedimento**  | 1) Clicar no ícone do perfil <br> 2) Clicar em "começe a vender"  <br> 3) Preencher os campos do formuláio <br> 4) Salvar alterações <br>
+**Procedimento**  | 1) Clicar no ícone do perfil. <br> 2) Selecionar "começar a vender".  <br> 3) Preencher os campos do formuláio. <br> 4) Salvar alterações. <br>
 **Requisitos associados** | RF - 04
-**Resultado esperado** | Cadastro realizado
-**Dados de entrada** | Inserção de dados válidos
+**Resultado esperado** | Cadastro realizado.
+**Dados de entrada** | Inserção de dados válidos.
 **Resultado obtido** | Sucesso
 
 ## Registro dos Testes de Software
