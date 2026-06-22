@@ -1,7 +1,7 @@
 # Apresentação
 Este documento lista os arquivos de apresentação do projeto desenvolvido pela equipe da turma SI 2026/1 da PUC Minas.
 
-# Arquivos
+# Arquivos produzidos
 
 * [Pitch inicial](./sample-pitch.pdf) -- arquivo com os slides da apresentação inicial
 * [Apresentação final](./sample-presentation.pdf) -- arquivo com os slides da apresentação final
@@ -9,7 +9,7 @@ Este documento lista os arquivos de apresentação do projeto desenvolvido pela 
 
 ## Título do Projeto
 
-ReUse
+ReUse - Desapego de Roupas
 
 ## Identidade Visual (Marca, Design)
 
@@ -23,8 +23,21 @@ Já o símbolo da folha representa sustentabilidade, reforçando o compromisso d
 
 ## Conjunto de Slides (Estrutura)
 
- [Slides de Apresentação](./sample-presentation.pdf)
+| Slide | Seção | Conteúdo |
+|-------|-------|----------|
+| 1 | Capa | Nome do projeto, integrantes, orientador e instituição |
+| 2 | Sumário | Visão geral das seções da apresentação |
+| 3 | Contextualização | Problema abordado, economia circular e motivação do projeto |
+| 4 | Objetivos | Objetivo geral e objetivos específicos da plataforma |
+| 5 | Perfis de Usuário | Personas principais: Anunciante, Interessado e Administrador |
+| 6 | Histórias de Usuário | Necessidades dos usuários e funcionalidades esperadas |
+| 7 | Tecnologias | Ferramentas e tecnologias utilizadas no desenvolvimento |
+| 8 | User Flow | Fluxo de navegação entre as telas do sistema |
+| 9 | Testes | Resultados dos testes, pontos fortes e melhorias |
+| 10 | Conclusão | Resultados alcançados e possíveis trabalhos futuros |
+
+ [Link para o slide](./sample-presentation.pdf)
 
 ## Vídeo de demonstração
 
-[Vídeo](./sample-video.mp4)
+[Link para o vídeo](./sample-video.mp4)
