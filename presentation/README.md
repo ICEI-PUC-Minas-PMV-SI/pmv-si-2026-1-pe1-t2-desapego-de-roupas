@@ -41,3 +41,4 @@ Já o símbolo da folha representa sustentabilidade, reforçando o compromisso d
 ## Vídeo de demonstração
 
 [Link para o vídeo](./sample-video.mp4)
+[Link para o vídeo](https://drive.google.com/file/d/1OkCuBgjWS0X8REN4buHZiuorkkflw73F/view?usp=sharing)
